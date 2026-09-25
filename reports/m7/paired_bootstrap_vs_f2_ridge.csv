@@ -1,0 +1,15 @@
+model,reference,mean_mae_difference_mah,paired_bootstrap_ci95_low,paired_bootstrap_ci95_high,interpretation
+training_mean,ridge__f2_physics_informed,363.42498828040505,287.3402753898284,441.9886220752742,negative favors candidate; interval is descriptive with 39 flights
+nominal_time_x_current,ridge__f2_physics_informed,136.84571670663814,100.81452945071588,175.49344151805744,negative favors candidate; interval is descriptive with 39 flights
+px4_style_multicopter_time_x_current,ridge__f2_physics_informed,122.22679707204865,96.05062850257671,154.58392671541384,negative favors candidate; interval is descriptive with 39 flights
+ridge__f0_route_and_wind,ridge__f2_physics_informed,39.287852989259996,24.521215299085227,55.40985915352478,negative favors candidate; interval is descriptive with 39 flights
+neural_network__f0_route_and_wind,ridge__f2_physics_informed,7.809655625667921,-3.0131759426362805,18.31181666852144,negative favors candidate; interval is descriptive with 39 flights
+xgboost__f0_route_and_wind,ridge__f2_physics_informed,28.66126563850078,14.237044680930548,44.003072102474306,negative favors candidate; interval is descriptive with 39 flights
+ridge__f1_vehicle_symptoms,ridge__f2_physics_informed,38.250648037874456,21.205205984516866,57.648207708391,negative favors candidate; interval is descriptive with 39 flights
+neural_network__f1_vehicle_symptoms,ridge__f2_physics_informed,19.36878684368951,5.181520020753895,34.98487797069231,negative favors candidate; interval is descriptive with 39 flights
+xgboost__f1_vehicle_symptoms,ridge__f2_physics_informed,32.992269336618165,15.89946222920869,52.24463336525517,negative favors candidate; interval is descriptive with 39 flights
+ridge__f2_physics_informed,ridge__f2_physics_informed,0.0,0.0,0.0,negative favors candidate; interval is descriptive with 39 flights
+neural_network__f2_physics_informed,ridge__f2_physics_informed,3.9590910065808087,-5.710998922639877,13.091128721470337,negative favors candidate; interval is descriptive with 39 flights
+xgboost__f2_physics_informed,ridge__f2_physics_informed,14.918235462093522,2.2450716770254586,28.305677289152104,negative favors candidate; interval is descriptive with 39 flights
+neural_network_true_wind_oracle,ridge__f2_physics_informed,3.4599712567437857,-3.9802635592589763,10.84052682351478,negative favors candidate; interval is descriptive with 39 flights
+xgboost_true_wind_oracle,ridge__f2_physics_informed,17.727953694633335,6.261526236268397,29.500860957598768,negative favors candidate; interval is descriptive with 39 flights

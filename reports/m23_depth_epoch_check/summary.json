@@ -1,0 +1,115 @@
+{
+  "milestone": "M23_depth_epoch_check",
+  "protocol": "DECISIONS.md D034",
+  "max_epochs": 3000,
+  "results": [
+    {
+      "shape": "256",
+      "mae_cap600_mah": 20.455506728572743,
+      "mae_cap3000_mah": 20.627276739700108,
+      "strong_headwind_mae_cap3000_mah": 45.201709995964215,
+      "max_underprediction_cap3000_mah": 214.7459409228386,
+      "median_epochs_cap3000": 527.0,
+      "max_epochs_cap3000": 712,
+      "cap3000_minus_cap600_estimate": 0.17177001112736434,
+      "cap3000_minus_cap600_ci95_low": -0.13478803767729514,
+      "cap3000_minus_cap600_ci95_high": 0.47485289946970105
+    },
+    {
+      "shape": "1024",
+      "mae_cap600_mah": 21.86064686091072,
+      "mae_cap3000_mah": 21.713465555246074,
+      "strong_headwind_mae_cap3000_mah": 51.60638881372305,
+      "max_underprediction_cap3000_mah": 204.06082457533785,
+      "median_epochs_cap3000": 394.0,
+      "max_epochs_cap3000": 613,
+      "cap3000_minus_cap600_estimate": -0.14718130566464332,
+      "cap3000_minus_cap600_ci95_low": -0.5454833367021811,
+      "cap3000_minus_cap600_ci95_high": 0.21384253886885524
+    },
+    {
+      "shape": "64-32",
+      "mae_cap600_mah": 22.890378652923918,
+      "mae_cap3000_mah": 22.200758142796527,
+      "strong_headwind_mae_cap3000_mah": 52.22604434129927,
+      "max_underprediction_cap3000_mah": 205.50359221373174,
+      "median_epochs_cap3000": 676.0,
+      "max_epochs_cap3000": 793,
+      "cap3000_minus_cap600_estimate": -0.6896205101273953,
+      "cap3000_minus_cap600_ci95_low": -1.642478165432167,
+      "cap3000_minus_cap600_ci95_high": 0.24384028469557267
+    },
+    {
+      "shape": "128-64",
+      "mae_cap600_mah": 22.275240069653282,
+      "mae_cap3000_mah": 21.938241380188984,
+      "strong_headwind_mae_cap3000_mah": 51.61333499841373,
+      "max_underprediction_cap3000_mah": 225.34545431872948,
+      "median_epochs_cap3000": 505.0,
+      "max_epochs_cap3000": 628,
+      "cap3000_minus_cap600_estimate": -0.3369986894642992,
+      "cap3000_minus_cap600_ci95_low": -0.7920879060287399,
+      "cap3000_minus_cap600_ci95_high": 0.11384460199797815
+    },
+    {
+      "shape": "64-32-16",
+      "mae_cap600_mah": 21.802638781737276,
+      "mae_cap3000_mah": 22.265481721142862,
+      "strong_headwind_mae_cap3000_mah": 51.370285945911746,
+      "max_underprediction_cap3000_mah": 209.09280927254395,
+      "median_epochs_cap3000": 612.0,
+      "max_epochs_cap3000": 841,
+      "cap3000_minus_cap600_estimate": 0.4628429394055889,
+      "cap3000_minus_cap600_ci95_low": -0.3718779553266238,
+      "cap3000_minus_cap600_ci95_high": 1.2725069119466932
+    },
+    {
+      "shape": "128-64-32",
+      "mae_cap600_mah": 22.135735592603936,
+      "mae_cap3000_mah": 22.34760724373705,
+      "strong_headwind_mae_cap3000_mah": 52.33083948570684,
+      "max_underprediction_cap3000_mah": 193.4334913962216,
+      "median_epochs_cap3000": 406.0,
+      "max_epochs_cap3000": 665,
+      "cap3000_minus_cap600_estimate": 0.21187165113310963,
+      "cap3000_minus_cap600_ci95_low": -0.19675790083043085,
+      "cap3000_minus_cap600_ci95_high": 0.6265742012540229
+    },
+    {
+      "shape": "128-64-32-16",
+      "mae_cap600_mah": 21.98569818087274,
+      "mae_cap3000_mah": 21.98569818087275,
+      "strong_headwind_mae_cap3000_mah": 56.56725963262665,
+      "max_underprediction_cap3000_mah": 200.93175302086138,
+      "median_epochs_cap3000": 430.0,
+      "max_epochs_cap3000": 516,
+      "cap3000_minus_cap600_estimate": 9.441121471691296e-15,
+      "cap3000_minus_cap600_ci95_low": -5.50732085848659e-15,
+      "cap3000_minus_cap600_ci95_high": 2.4389563801869184e-14
+    },
+    {
+      "shape": "5x16",
+      "mae_cap600_mah": 21.97422759021275,
+      "mae_cap3000_mah": 21.92455096343447,
+      "strong_headwind_mae_cap3000_mah": 56.5355259017811,
+      "max_underprediction_cap3000_mah": 217.3441924237277,
+      "median_epochs_cap3000": 758.0,
+      "max_epochs_cap3000": 1043,
+      "cap3000_minus_cap600_estimate": -0.04967662677827879,
+      "cap3000_minus_cap600_ci95_low": -1.1144681787350703,
+      "cap3000_minus_cap600_ci95_high": 1.0837140273652863
+    },
+    {
+      "shape": "10x16",
+      "mae_cap600_mah": 50.82233579222369,
+      "mae_cap3000_mah": 50.50407948870524,
+      "strong_headwind_mae_cap3000_mah": 84.59906461423294,
+      "max_underprediction_cap3000_mah": 322.1754579583503,
+      "median_epochs_cap3000": 698.0,
+      "max_epochs_cap3000": 995,
+      "cap3000_minus_cap600_estimate": -0.3182563035184634,
+      "cap3000_minus_cap600_ci95_low": -1.6840187010682566,
+      "cap3000_minus_cap600_ci95_high": 1.0363525072149868
+    }
+  ]
+}

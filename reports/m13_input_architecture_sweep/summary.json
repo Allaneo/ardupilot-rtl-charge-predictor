@@ -1,0 +1,203 @@
+{
+  "completed_runs": 470,
+  "neural_runs": 450,
+  "reference_runs": 20,
+  "validation_flights": 39,
+  "best_mean_neural_architecture_by_variant": [
+    {
+      "variant": "f0_fixed_time",
+      "architecture": "1024",
+      "parameters": 18433.0,
+      "mean_train_mae_mah": 6.986522973413897,
+      "mean_validation_mae_mah": 46.21992340481598,
+      "min_validation_mae_mah": 45.501126300512404,
+      "max_validation_mae_mah": 46.84200019447863,
+      "mean_high_headwind_mae_mah": 107.34701483726047,
+      "mean_max_underprediction_mah": 532.2926434263923,
+      "seed_range_mah": 1.3408738939662257,
+      "train_validation_gap_mah": 39.23340043140208
+    },
+    {
+      "variant": "f0_learned_time",
+      "architecture": "1024",
+      "parameters": 18433.0,
+      "mean_train_mae_mah": 8.03275795781249,
+      "mean_validation_mae_mah": 41.94014358579176,
+      "min_validation_mae_mah": 41.557889952951044,
+      "max_validation_mae_mah": 42.66464787375077,
+      "mean_high_headwind_mae_mah": 91.4364707720428,
+      "mean_max_underprediction_mah": 480.8342006828473,
+      "seed_range_mah": 1.1067579207997298,
+      "train_validation_gap_mah": 33.90738562797927
+    },
+    {
+      "variant": "f0_original",
+      "architecture": "1024",
+      "parameters": 17409.0,
+      "mean_train_mae_mah": 8.14290055872546,
+      "mean_validation_mae_mah": 52.63393280522843,
+      "min_validation_mae_mah": 50.56387357006138,
+      "max_validation_mae_mah": 54.257695326065445,
+      "mean_high_headwind_mae_mah": 117.53994595867648,
+      "mean_max_underprediction_mah": 575.447668711623,
+      "seed_range_mah": 3.6938217560040627,
+      "train_validation_gap_mah": 44.491032246502975
+    },
+    {
+      "variant": "f1_fixed_time",
+      "architecture": "512",
+      "parameters": 19969.0,
+      "mean_train_mae_mah": 10.018044154140021,
+      "mean_validation_mae_mah": 50.155211182539325,
+      "min_validation_mae_mah": 46.80148086194513,
+      "max_validation_mae_mah": 53.2362094463975,
+      "mean_high_headwind_mae_mah": 111.71261359753969,
+      "mean_max_underprediction_mah": 484.1648534953868,
+      "seed_range_mah": 6.4347285844523725,
+      "train_validation_gap_mah": 40.137167028399304
+    },
+    {
+      "variant": "f1_learned_speed_time",
+      "architecture": "256",
+      "parameters": 10241.0,
+      "mean_train_mae_mah": 9.63120126197048,
+      "mean_validation_mae_mah": 43.24877860590819,
+      "min_validation_mae_mah": 40.781382896871236,
+      "max_validation_mae_mah": 47.333498213056096,
+      "mean_high_headwind_mae_mah": 86.29930754091644,
+      "mean_max_underprediction_mah": 397.39957787233305,
+      "seed_range_mah": 6.55211531618486,
+      "train_validation_gap_mah": 33.61757734393771
+    },
+    {
+      "variant": "f1_original",
+      "architecture": "512",
+      "parameters": 19457.0,
+      "mean_train_mae_mah": 10.00025919304279,
+      "mean_validation_mae_mah": 52.688801942725114,
+      "min_validation_mae_mah": 50.534214208085444,
+      "max_validation_mae_mah": 53.79076298358338,
+      "mean_high_headwind_mae_mah": 114.40922942925947,
+      "mean_max_underprediction_mah": 491.6695719228289,
+      "seed_range_mah": 3.256548775497933,
+      "train_validation_gap_mah": 42.68854274968233
+    },
+    {
+      "variant": "f2_corrected_fixed",
+      "architecture": "128-64-32",
+      "parameters": 16257.0,
+      "mean_train_mae_mah": 11.012769483751063,
+      "mean_validation_mae_mah": 42.23526990157162,
+      "min_validation_mae_mah": 40.78351595029268,
+      "max_validation_mae_mah": 44.69830251861304,
+      "mean_high_headwind_mae_mah": 90.07496840351708,
+      "mean_max_underprediction_mah": 437.929197219677,
+      "seed_range_mah": 3.914786568320359,
+      "train_validation_gap_mah": 31.222500417820555
+    },
+    {
+      "variant": "f2_corrected_learned",
+      "architecture": "256",
+      "parameters": 12033.0,
+      "mean_train_mae_mah": 11.915849978484694,
+      "mean_validation_mae_mah": 37.979604223564,
+      "min_validation_mae_mah": 37.72786215316879,
+      "max_validation_mae_mah": 38.2379517440438,
+      "mean_high_headwind_mae_mah": 77.53256657513252,
+      "mean_max_underprediction_mah": 348.4880660091133,
+      "seed_range_mah": 0.5100895908750047,
+      "train_validation_gap_mah": 26.06375424507931
+    },
+    {
+      "variant": "f3_cubic_fixed",
+      "architecture": "1024",
+      "parameters": 46081.0,
+      "mean_train_mae_mah": 6.752116657384168,
+      "mean_validation_mae_mah": 32.09100834856746,
+      "min_validation_mae_mah": 29.89409609225862,
+      "max_validation_mae_mah": 34.367367746362724,
+      "mean_high_headwind_mae_mah": 69.25642654523195,
+      "mean_max_underprediction_mah": 319.72822520562386,
+      "seed_range_mah": 4.473271654104103,
+      "train_validation_gap_mah": 25.338891691183296
+    },
+    {
+      "variant": "f3_cubic_learned",
+      "architecture": "1024",
+      "parameters": 46081.0,
+      "mean_train_mae_mah": 6.962647451772226,
+      "mean_validation_mae_mah": 30.277978728584078,
+      "min_validation_mae_mah": 28.785911781559754,
+      "max_validation_mae_mah": 32.21172896224098,
+      "mean_high_headwind_mae_mah": 61.23854964408083,
+      "mean_max_underprediction_mah": 297.23518808915924,
+      "seed_range_mah": 3.4258171806812285,
+      "train_validation_gap_mah": 23.31533127681185
+    }
+  ],
+  "paired_variants": [
+    {
+      "reference": "f0_original",
+      "candidate": "f0_fixed_time",
+      "matched_neural_runs": 45,
+      "improved_neural_runs": 36,
+      "mean_neural_mae_change_mah": -12.363495946634698,
+      "median_neural_mae_change_mah": -6.202476105927474,
+      "ridge_mae_change_mah": -0.537437204226265,
+      "xgboost_mae_change_mah": 5.424759302383791
+    },
+    {
+      "reference": "f0_fixed_time",
+      "candidate": "f0_learned_time",
+      "matched_neural_runs": 45,
+      "improved_neural_runs": 42,
+      "mean_neural_mae_change_mah": -11.69293135494588,
+      "median_neural_mae_change_mah": -10.204005086815066,
+      "ridge_mae_change_mah": -21.42999290970357,
+      "xgboost_mae_change_mah": -8.371743383163064
+    },
+    {
+      "reference": "f1_original",
+      "candidate": "f1_fixed_time",
+      "matched_neural_runs": 45,
+      "improved_neural_runs": 35,
+      "mean_neural_mae_change_mah": -17.229396325883922,
+      "median_neural_mae_change_mah": -9.102653252869501,
+      "ridge_mae_change_mah": -0.490484296944814,
+      "xgboost_mae_change_mah": -9.565606767703358
+    },
+    {
+      "reference": "f1_fixed_time",
+      "candidate": "f1_learned_speed_time",
+      "matched_neural_runs": 45,
+      "improved_neural_runs": 29,
+      "mean_neural_mae_change_mah": -2.4518158008284914,
+      "median_neural_mae_change_mah": -3.844516878629939,
+      "ridge_mae_change_mah": -16.473335761196495,
+      "xgboost_mae_change_mah": 2.9561635335286525
+    },
+    {
+      "reference": "f2_corrected_fixed",
+      "candidate": "f2_corrected_learned",
+      "matched_neural_runs": 45,
+      "improved_neural_runs": 34,
+      "mean_neural_mae_change_mah": -1.8908297981252544,
+      "median_neural_mae_change_mah": -2.9644118484622766,
+      "ridge_mae_change_mah": -25.41852486380386,
+      "xgboost_mae_change_mah": -29.15634883000299
+    },
+    {
+      "reference": "f3_cubic_fixed",
+      "candidate": "f3_cubic_learned",
+      "matched_neural_runs": 45,
+      "improved_neural_runs": 27,
+      "mean_neural_mae_change_mah": -2.086151281195501,
+      "median_neural_mae_change_mah": -1.344111739837615,
+      "ridge_mae_change_mah": -3.5531711848352145,
+      "xgboost_mae_change_mah": -19.864229123777797
+    }
+  ],
+  "minimum_single_run_validation_mae_mah": 28.785911781559754,
+  "maximum_single_run_validation_mae_mah": 459.9859150134871,
+  "test_set_used": false
+}

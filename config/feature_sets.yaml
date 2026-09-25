@@ -1,0 +1,66 @@
+privileged_truth:
+  - payload_mass_kg
+  - true_wind_north_m_s
+  - true_wind_east_m_s
+
+targets:
+  - rtl_charge_mah
+  - rtl_energy_wh
+  - rtl_duration_s
+
+f0_route_and_wind:
+  - distance_home_m
+  - relative_altitude_m
+  - planned_rtl_climb_m
+  - route_bearing_sin
+  - route_bearing_cos
+  - battery_voltage_v
+  - voltage_mean_v
+  - voltage_min_v
+  - voltage_std_v
+  - ekf_wind_north_m_s
+  - ekf_wind_east_m_s
+  - ekf_wind_north_mean_m_s
+  - ekf_wind_north_std_m_s
+  - ekf_wind_east_mean_m_s
+  - ekf_wind_east_std_m_s
+
+f1_vehicle_symptoms:
+  extends: f0_route_and_wind
+  features:
+    - current_mean_a
+    - current_std_a
+    - current_q25_a
+    - current_median_a
+    - current_q75_a
+    - current_q90_a
+    - throttle_mean
+    - throttle_std
+    - active_motor_count
+    - motor_output_mean
+    - motor_output_std
+    - motor_output_max
+    - motor_saturation_fraction
+    - roll_abs_mean_rad
+    - pitch_abs_mean_rad
+    - roll_rate_std_rad_s
+    - pitch_rate_std_rad_s
+    - vertical_speed_mean_m_s
+    - vertical_speed_std_m_s
+    - horizontal_speed_mean_m_s
+    - horizontal_speed_std_m_s
+
+f2_physics_informed:
+  extends: f1_vehicle_symptoms
+  features:
+    - headwind_m_s
+    - crosswind_abs_m_s
+    - nominal_horizontal_time_s
+    - nominal_climb_time_s
+    - nominal_descent_time_s
+    - nominal_total_rtl_time_s
+    - required_air_velocity_north_m_s
+    - required_air_velocity_east_m_s
+    - required_airspeed_m_s
+    - required_airspeed_squared_m2_s2
+    - current_time_charge_baseline_mah

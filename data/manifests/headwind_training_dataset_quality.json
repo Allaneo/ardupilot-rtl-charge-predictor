@@ -1,0 +1,32 @@
+{
+  "all_checks_passed": true,
+  "cache_hits": 0,
+  "cache_misses": 39,
+  "checks": {
+    "all_active_motor_counts_positive": true,
+    "all_actual_altitudes_within_2m_of_request": true,
+    "all_actual_distances_within_5m_of_request": true,
+    "all_charge_crosschecks_passed": true,
+    "all_completed_runs_processed": true,
+    "all_decision_windows_have_at_least_50_battery_samples": true,
+    "all_selected_features_finite": true,
+    "unique_run_ids": true
+  },
+  "feature_set_sizes": {
+    "f0_route_and_wind": 15,
+    "f1_vehicle_symptoms": 36,
+    "f2_physics_informed": 47
+  },
+  "manifest_completed": 39,
+  "manifest_rows": 40,
+  "maximum_altitude_error_m": 0.011236727219127829,
+  "maximum_charge_crosscheck_error_mah": 0.4358748286474565,
+  "maximum_distance_error_m": 0.10184841373802556,
+  "maximum_runner_charge_error_mah": 1.3886960872932832,
+  "output": "data/processed/headwind_training_dataset.csv",
+  "processed_rows": 39,
+  "processing_failures": [],
+  "split_counts": {
+    "train": 39
+  }
+}

@@ -1,0 +1,5 @@
+candidate,reference,mean_mae_difference_mah,bootstrap_95_low_mah,bootstrap_95_high_mah,n_validation_flights
+f3_with_cubic_ridge,f3_without_cubic_ridge,-7.556072730814942,-13.611911022640092,-1.6321228096223521,39
+f3_with_cubic_ridge,ridge_f2_frozen,-4.319137863746639,-11.657903383970172,5.5399197188813405,39
+f3_with_cubic_neural,f3_without_cubic_neural,-22.45841907905943,-37.49919105692767,-7.330042034306606,39
+f3_with_cubic_neural,neural_f2_frozen,6.118951597459543,-9.451316644264539,24.247057815196815,39

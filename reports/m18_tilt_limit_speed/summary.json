@@ -1,0 +1,106 @@
+{
+  "caveat": "Validation reused across M9-M17; exploratory. Neural epochs use validation early stopping as in M13.",
+  "charge_results": [
+    {
+      "headwind_ge_2_mae_mah": 62.59601953989806,
+      "headwind_ge_2_n": 14,
+      "headwind_ge_4_mae_mah": 121.92941118534036,
+      "headwind_ge_4_n": 5,
+      "mae_mah": 37.55209326936853,
+      "max_underprediction_mah": 414.5267777534773,
+      "model": "ridge",
+      "p95_underprediction_mah": 89.22529704859436,
+      "rmse_mah": 75.74500747629047,
+      "variant": "f3_forest_speed"
+    },
+    {
+      "headwind_ge_2_mae_mah": 55.16966946026273,
+      "headwind_ge_2_n": 14,
+      "headwind_ge_4_mae_mah": 95.62701497292637,
+      "headwind_ge_4_n": 5,
+      "mae_mah": 25.961410296019622,
+      "max_underprediction_mah": 297.23518808915924,
+      "model": "neural_1024_seed_mean",
+      "p95_underprediction_mah": 93.23234448732451,
+      "rmse_mah": 56.14258891352484,
+      "variant": "f3_forest_speed"
+    },
+    {
+      "headwind_ge_2_mae_mah": 45.66389243228152,
+      "headwind_ge_2_n": 14,
+      "headwind_ge_4_mae_mah": 74.57513924819982,
+      "headwind_ge_4_n": 5,
+      "mae_mah": 25.707889150274227,
+      "max_underprediction_mah": 247.29832675244825,
+      "model": "ridge",
+      "p95_underprediction_mah": 52.57449130065787,
+      "rmse_mah": 48.27747385767749,
+      "variant": "f3_tilt_limit_speed"
+    },
+    {
+      "headwind_ge_2_mae_mah": 46.81102898448527,
+      "headwind_ge_2_n": 14,
+      "headwind_ge_4_mae_mah": 73.78451152204585,
+      "headwind_ge_4_n": 5,
+      "mae_mah": 20.75439618100686,
+      "max_underprediction_mah": 231.88295375744156,
+      "model": "neural_1024_seed_mean",
+      "p95_underprediction_mah": 65.90463529313317,
+      "rmse_mah": 45.56582391345072,
+      "variant": "f3_tilt_limit_speed"
+    },
+    {
+      "headwind_ge_2_mae_mah": 18.959440155824286,
+      "headwind_ge_2_n": 14,
+      "headwind_ge_4_mae_mah": 28.138961208546153,
+      "headwind_ge_4_n": 5,
+      "mae_mah": 14.211329102598247,
+      "max_underprediction_mah": 60.18308673242427,
+      "model": "ridge",
+      "p95_underprediction_mah": 30.750396546189215,
+      "rmse_mah": 18.609930665561937,
+      "variant": "f3_measured_speed_oracle"
+    },
+    {
+      "headwind_ge_2_mae_mah": 19.873543803906337,
+      "headwind_ge_2_n": 14,
+      "headwind_ge_4_mae_mah": 35.1755104587814,
+      "headwind_ge_4_n": 5,
+      "mae_mah": 12.806068037608071,
+      "max_underprediction_mah": 94.62390864481404,
+      "model": "neural_1024_seed_mean",
+      "p95_underprediction_mah": 32.509358099195886,
+      "rmse_mah": 20.44686026338375,
+      "variant": "f3_measured_speed_oracle"
+    }
+  ],
+  "milestone": "M18_tilt_limit_speed_validation",
+  "saturated_training_flights": 47,
+  "speed_results": [
+    {
+      "speed_mae_headwind_ge_2_m_s": 2.256039657070629,
+      "speed_mae_m_s": 0.8369950526082701,
+      "speed_max_overprediction_m_s": 4.7859774906415025,
+      "speed_model": "fixed_10"
+    },
+    {
+      "speed_mae_headwind_ge_2_m_s": 0.6078953406570068,
+      "speed_mae_m_s": 0.250739045400557,
+      "speed_max_overprediction_m_s": 1.949745583814381,
+      "speed_model": "random_forest"
+    },
+    {
+      "speed_mae_headwind_ge_2_m_s": 0.3483531900057139,
+      "speed_mae_m_s": 0.1447817099394785,
+      "speed_max_overprediction_m_s": 0.6929549049086292,
+      "speed_model": "tilt_limit"
+    }
+  ],
+  "test_flights_read": 0,
+  "train_flights": 172,
+  "v_max_model": {
+    "intercept_m_s": 4.484153481791389,
+    "throttle_coefficient_m_s": 17.040813328442685
+  },
+  "validation_flights": 39
+}

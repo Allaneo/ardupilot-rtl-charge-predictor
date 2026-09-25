@@ -1,0 +1,9 @@
+{
+  "absolute_error_mah": 55.40892191024193,
+  "actual_rtl_charge_mah": 792.4383307843168,
+  "model": "Ridge on 40 train-only F0 sample rows",
+  "n_training_rows": 40,
+  "predicted_rtl_charge_mah": 737.0294088740749,
+  "purpose": "reproducibility demonstration, not the M7 final model",
+  "run_id": "m8-fresh-env-001"
+}

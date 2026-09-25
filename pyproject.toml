@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ardupilot-rtl-charge"
+version = "0.1.0"
+description = "Predict ArduPilot multicopter RTL charge from decision-time SITL telemetry."
+requires-python = ">=3.11"
+dependencies = [
+  "numpy==2.0.2",
+  "pandas==2.2.3",
+  "pyyaml==6.0.3",
+]
+
+[project.optional-dependencies]
+simulation = [
+  "empy==3.3.4",
+  "future==1.0.0",
+  "geocoder==1.38.1",
+  "gnureadline==8.3.3",
+  "mavproxy==1.8.74",
+  "pexpect==4.9.0",
+  "pymavlink==2.4.49",
+]
+ml = [
+  "scikit-learn==1.6.1",
+  "joblib==1.6.0",
+  "xgboost==2.1.4",
+  "matplotlib==3.11.2",
+  "seaborn==0.13.2",
+]
+test = [
+  "pytest==8.4.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

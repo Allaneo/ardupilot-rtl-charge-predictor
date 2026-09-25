@@ -1,0 +1,40 @@
+{
+  "flights": 60,
+  "lean_limited_flights": 40,
+  "measured_speed_range_m_s": [
+    5.332672261371427,
+    10.008621278631692
+  ],
+  "speed_models": {
+    "fixed_10_speed_m_s": {
+      "est_headwind_ge_3_mae_m_s": 2.880477072867865,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_m_s": 0.6424413032354781,
+      "group_g_n": 30,
+      "group_h_mae_m_s": 2.883562086395602,
+      "group_h_n": 30,
+      "mae_m_s": 1.76300169481554,
+      "max_overestimate_m_s": 4.667327738628573
+    },
+    "forest_speed_m_s": {
+      "est_headwind_ge_3_mae_m_s": 0.41868047196231584,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_m_s": 0.18838324304598075,
+      "group_g_n": 30,
+      "group_h_mae_m_s": 0.3868324968539557,
+      "group_h_n": 30,
+      "mae_m_s": 0.2876078699499683,
+      "max_overestimate_m_s": 1.2305318879570812
+    },
+    "tilt_speed_m_s": {
+      "est_headwind_ge_3_mae_m_s": 0.3400265793040461,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_m_s": 0.1385897501001446,
+      "group_g_n": 30,
+      "group_h_mae_m_s": 0.34778433816524196,
+      "group_h_n": 30,
+      "mae_m_s": 0.24318704413269324,
+      "max_overestimate_m_s": 0.8641652118163758
+    }
+  }
+}

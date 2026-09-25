@@ -1,0 +1,364 @@
+{
+  "artifacts": [
+    "test_predictions.csv",
+    "test_metrics.csv",
+    "paired_bootstrap_vs_f2_ridge.csv",
+    "error_breakdowns.csv",
+    "test_mae_comparison.png",
+    "actual_vs_predicted.png",
+    "residual_distributions.png",
+    "error_breakdowns.png",
+    "underprediction_distribution.png",
+    "wind_oracle_gap.png",
+    "feature_set_ablation.png",
+    "f2_model_comparison.png"
+  ],
+  "bootstrap_resamples": 10000,
+  "bootstrap_unit": "flight; paired comparisons resample identical run ids",
+  "milestone": "M7",
+  "model_selection_on_test": false,
+  "oracle_caution": "true-wind models use privileged simulator truth and are diagnostic, not deployable",
+  "paired_reference": "ridge__f2_physics_informed",
+  "primary_metric": "test MAE in mAh",
+  "results": [
+    {
+      "feature_set": "baseline",
+      "mae_bootstrap_95": {
+        "ci95_high": 475.393207602753,
+        "ci95_low": 316.20633358470764,
+        "estimate": 394.4506953380553
+      },
+      "mae_mah": 394.4506953380553,
+      "mean_signed_error_mah": 11.572291204927232,
+      "mean_underprediction_mah": 191.43920206656404,
+      "median_absolute_error_mah": 396.823307064481,
+      "model": "training_mean",
+      "n_test": 39,
+      "p95_absolute_error_mah": 764.7290407016337,
+      "p95_underprediction_mah": 745.8188783535433,
+      "r_squared": -0.0006064052622543059,
+      "rmse_mah": 470.07755186274875,
+      "wape": 0.24832743648331987
+    },
+    {
+      "feature_set": "baseline",
+      "mae_bootstrap_95": {
+        "ci95_high": 208.3157094935054,
+        "ci95_low": 131.95106071765233,
+        "estimate": 167.87142376428847
+      },
+      "mae_mah": 167.87142376428847,
+      "mean_signed_error_mah": -137.7304155071525,
+      "mean_underprediction_mah": 152.80091963572048,
+      "median_absolute_error_mah": 137.45637232534045,
+      "model": "nominal_time_x_current",
+      "n_test": 39,
+      "p95_absolute_error_mah": 433.49961902383137,
+      "p95_underprediction_mah": 433.49961902383137,
+      "r_squared": 0.804967724996181,
+      "rmse_mah": 207.5348886651223,
+      "wape": 0.10568388093843722
+    },
+    {
+      "feature_set": "baseline",
+      "mae_bootstrap_95": {
+        "ci95_high": 193.51837875077257,
+        "ci95_low": 122.88309762881954,
+        "estimate": 153.252504129699
+      },
+      "mae_mah": 153.252504129699,
+      "mean_signed_error_mah": -153.252504129699,
+      "mean_underprediction_mah": 153.252504129699,
+      "median_absolute_error_mah": 109.65037607729778,
+      "model": "px4_style_multicopter_time_x_current",
+      "n_test": 39,
+      "p95_absolute_error_mah": 307.04125966837296,
+      "p95_underprediction_mah": 307.04125966837296,
+      "r_squared": 0.8351168394343866,
+      "rmse_mah": 190.82093733797038,
+      "wape": 0.09648050297531305
+    },
+    {
+      "feature_set": "f0_route_and_wind",
+      "mae_bootstrap_95": {
+        "ci95_high": 94.13423123150544,
+        "ci95_low": 50.826241300518475,
+        "estimate": 70.31356004691034
+      },
+      "mae_mah": 70.31356004691034,
+      "mean_signed_error_mah": 3.645440185434705,
+      "mean_underprediction_mah": 33.33405993073782,
+      "median_absolute_error_mah": 49.57922680583556,
+      "model": "ridge__f0_route_and_wind",
+      "n_test": 39,
+      "p95_absolute_error_mah": 162.3060637940448,
+      "p95_underprediction_mah": 113.15729636057495,
+      "r_squared": 0.9557587068557934,
+      "rmse_mah": 98.84433395256555,
+      "wape": 0.04426608020427202
+    },
+    {
+      "feature_set": "f0_route_and_wind",
+      "mae_bootstrap_95": {
+        "ci95_high": 53.98310332019416,
+        "ci95_low": 27.362237102729274,
+        "estimate": 38.83536268331829
+      },
+      "mae_mah": 38.83536268331829,
+      "mean_signed_error_mah": 16.066918945756765,
+      "mean_underprediction_mah": 11.38422186878076,
+      "median_absolute_error_mah": 29.822415964660195,
+      "model": "neural_network__f0_route_and_wind",
+      "n_test": 39,
+      "p95_absolute_error_mah": 81.9448354615614,
+      "p95_underprediction_mah": 38.56953931041584,
+      "r_squared": 0.984847102923866,
+      "rmse_mah": 57.84764850888599,
+      "wape": 0.024448901152990313
+    },
+    {
+      "feature_set": "f0_route_and_wind",
+      "mae_bootstrap_95": {
+        "ci95_high": 78.99246854312845,
+        "ci95_low": 42.88682802842571,
+        "estimate": 59.68697269615115
+      },
+      "mae_mah": 59.68697269615115,
+      "mean_signed_error_mah": -14.987776067030055,
+      "mean_underprediction_mah": 37.3373743815906,
+      "median_absolute_error_mah": 41.709739685058594,
+      "model": "xgboost__f0_route_and_wind",
+      "n_test": 39,
+      "p95_absolute_error_mah": 190.83286560058588,
+      "p95_underprediction_mah": 154.16322509765627,
+      "r_squared": 0.968546814381563,
+      "rmse_mah": 83.34320395157985,
+      "wape": 0.03757608516416057
+    },
+    {
+      "feature_set": "f1_vehicle_symptoms",
+      "mae_bootstrap_95": {
+        "ci95_high": 94.85667079664279,
+        "ci95_low": 47.377602584527395,
+        "estimate": 69.27635509552482
+      },
+      "mae_mah": 69.27635509552482,
+      "mean_signed_error_mah": 9.926434900623153,
+      "mean_underprediction_mah": 29.674960097450832,
+      "median_absolute_error_mah": 41.97049048267934,
+      "model": "ridge__f1_vehicle_symptoms",
+      "n_test": 39,
+      "p95_absolute_error_mah": 195.1999254681372,
+      "p95_underprediction_mah": 101.97242148993224,
+      "r_squared": 0.9523023079914541,
+      "rmse_mah": 102.63288935739487,
+      "wape": 0.043613105194392446
+    },
+    {
+      "feature_set": "f1_vehicle_symptoms",
+      "mae_bootstrap_95": {
+        "ci95_high": 72.34104759225052,
+        "ci95_low": 33.54168379064904,
+        "estimate": 50.39449390133988
+      },
+      "mae_mah": 50.39449390133988,
+      "mean_signed_error_mah": 6.784775147056673,
+      "mean_underprediction_mah": 21.8048593771416,
+      "median_absolute_error_mah": 34.7336535970735,
+      "model": "neural_network__f1_vehicle_symptoms",
+      "n_test": 39,
+      "p95_absolute_error_mah": 131.65893993758485,
+      "p95_underprediction_mah": 60.71224438507268,
+      "r_squared": 0.9715530675888336,
+      "rmse_mah": 79.2602784024372,
+      "wape": 0.03172598155181065
+    },
+    {
+      "feature_set": "f1_vehicle_symptoms",
+      "mae_bootstrap_95": {
+        "ci95_high": 87.58917703814865,
+        "ci95_low": 43.49831763137973,
+        "estimate": 64.01797639426854
+      },
+      "mae_mah": 64.01797639426854,
+      "mean_signed_error_mah": -9.24284824501483,
+      "mean_underprediction_mah": 36.63041231964168,
+      "median_absolute_error_mah": 39.949133300781114,
+      "model": "xgboost__f1_vehicle_symptoms",
+      "n_test": 39,
+      "p95_absolute_error_mah": 230.7895306396485,
+      "p95_underprediction_mah": 158.56269958496088,
+      "r_squared": 0.9587314268639789,
+      "rmse_mah": 95.46575239191816,
+      "wape": 0.0403026795356866
+    },
+    {
+      "feature_set": "f2_physics_informed",
+      "mae_bootstrap_95": {
+        "ci95_high": 42.56360820488267,
+        "ci95_low": 21.332845754153137,
+        "estimate": 31.02570705765036
+      },
+      "mae_mah": 31.02570705765036,
+      "mean_signed_error_mah": -3.2181205360210035,
+      "mean_underprediction_mah": 17.12191379683568,
+      "median_absolute_error_mah": 18.25506296019489,
+      "model": "ridge__f2_physics_informed",
+      "n_test": 39,
+      "p95_absolute_error_mah": 82.9741893221765,
+      "p95_underprediction_mah": 78.34746808918206,
+      "r_squared": 0.9905844486764229,
+      "rmse_mah": 45.59957033627977,
+      "wape": 0.019532312630621065
+    },
+    {
+      "feature_set": "f2_physics_informed",
+      "mae_bootstrap_95": {
+        "ci95_high": 46.21957931510071,
+        "ci95_low": 26.615514032220084,
+        "estimate": 34.98479806423117
+      },
+      "mae_mah": 34.98479806423117,
+      "mean_signed_error_mah": -8.087821718926815,
+      "mean_underprediction_mah": 21.53630989157899,
+      "median_absolute_error_mah": 30.569297041026857,
+      "model": "neural_network__f2_physics_informed",
+      "n_test": 39,
+      "p95_absolute_error_mah": 69.80963550101482,
+      "p95_underprediction_mah": 51.97683939739755,
+      "r_squared": 0.989960424024954,
+      "rmse_mah": 47.086407663442216,
+      "wape": 0.02202476842316515
+    },
+    {
+      "feature_set": "f2_physics_informed",
+      "mae_bootstrap_95": {
+        "ci95_high": 60.302315030794134,
+        "ci95_low": 33.250562775602404,
+        "estimate": 45.943942519743885
+      },
+      "mae_mah": 45.943942519743885,
+      "mean_signed_error_mah": -8.775073242510825,
+      "mean_underprediction_mah": 27.359507881127357,
+      "median_absolute_error_mah": 31.08510742187491,
+      "model": "xgboost__f2_physics_informed",
+      "n_test": 39,
+      "p95_absolute_error_mah": 117.53890258789073,
+      "p95_underprediction_mah": 114.60531127929687,
+      "r_squared": 0.9819735655216053,
+      "rmse_mah": 63.094686991648885,
+      "wape": 0.028924125632703076
+    },
+    {
+      "feature_set": "f2_true_wind_oracle",
+      "mae_bootstrap_95": {
+        "ci95_high": 48.118337503316276,
+        "ci95_low": 24.927917279137144,
+        "estimate": 34.48567831439415
+      },
+      "mae_mah": 34.48567831439415,
+      "mean_signed_error_mah": -0.17278492133846157,
+      "mean_underprediction_mah": 17.329231617866306,
+      "median_absolute_error_mah": 29.140031496257734,
+      "model": "neural_network_true_wind_oracle",
+      "n_test": 39,
+      "p95_absolute_error_mah": 72.14175350500788,
+      "p95_underprediction_mah": 44.60603183340751,
+      "r_squared": 0.9883005542468594,
+      "rmse_mah": 50.830047675869686,
+      "wape": 0.021710546317740796
+    },
+    {
+      "feature_set": "f2_true_wind_oracle",
+      "mae_bootstrap_95": {
+        "ci95_high": 63.4845144668598,
+        "ci95_low": 35.506840756847375,
+        "estimate": 48.7536607522837
+      },
+      "mae_mah": 48.7536607522837,
+      "mean_signed_error_mah": -10.96046987712621,
+      "mean_underprediction_mah": 29.85706531470495,
+      "median_absolute_error_mah": 37.55352783203125,
+      "model": "xgboost_true_wind_oracle",
+      "n_test": 39,
+      "p95_absolute_error_mah": 121.56053161621098,
+      "p95_underprediction_mah": 102.79489013671854,
+      "r_squared": 0.9798556576615209,
+      "rmse_mah": 66.69824699809519,
+      "wape": 0.03069299087789952
+    }
+  ],
+  "seed": 20260921,
+  "split_counts": {
+    "test": 39,
+    "train": 172
+  },
+  "subgroup_caution": "39 test flights; all bins include n; bins below five are flagged and descriptive only",
+  "subgroup_thresholds": {
+    "altitude": [
+      58.6038818359375,
+      89.6102523803711
+    ],
+    "distance_home": [
+      661.5577504475768,
+      1052.331368332223
+    ],
+    "ekf_wind_error": [
+      0.18136353089152707,
+      0.321686561574496
+    ],
+    "payload_mass": [
+      0.3434726848932983,
+      0.6742599956123577
+    ],
+    "true_wind_speed": [
+      1.8116783195881947,
+      3.9004772106426424
+    ],
+    "wind_route_regime": "true along-route wind: below -0.25 m/s headwind, above +0.25 m/s tailwind, otherwise crosswind"
+  },
+  "target": "rtl_charge_mah",
+  "test_evaluation_count": 1,
+  "test_labels_used": true,
+  "test_run_ids": [
+    "pipeline-0015-run-001",
+    "pipeline-0020-run-001",
+    "pipeline-0025-run-001",
+    "pipeline-0027-run-001",
+    "pipeline-0032-run-001",
+    "pipeline-0033-run-001",
+    "pipeline-0036-run-001",
+    "pipeline-0041-run-001",
+    "pipeline-0056-run-001",
+    "pipeline-0064-run-001",
+    "pipeline-0067-run-001",
+    "pipeline-0070-run-001",
+    "pipeline-0078-run-001",
+    "pipeline-0084-run-001",
+    "pipeline-0087-run-001",
+    "pipeline-0091-run-001",
+    "pipeline-0095-run-001",
+    "pipeline-0099-run-001",
+    "pipeline-0102-run-001",
+    "pipeline-0105-run-001",
+    "pipeline-0114-run-001",
+    "pipeline-0123-run-001",
+    "pipeline-0128-run-001",
+    "pipeline-0134-run-001",
+    "pipeline-0153-run-001",
+    "pipeline-0157-run-001",
+    "pipeline-0167-run-001",
+    "pipeline-0171-run-001",
+    "pipeline-0176-run-001",
+    "pipeline-0179-run-001",
+    "pipeline-0186-run-001",
+    "pipeline-0187-run-001",
+    "pipeline-0204-run-001",
+    "pipeline-0210-run-001",
+    "pipeline-0213-run-001",
+    "pipeline-0219-run-001",
+    "pipeline-0223-run-001",
+    "pipeline-0239-run-001",
+    "pipeline-0241-run-001"
+  ]
+}

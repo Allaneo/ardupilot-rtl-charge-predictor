@@ -1,0 +1,468 @@
+{
+  "confirmation_flights": 60,
+  "evaluation_count": 1,
+  "group_counts": {
+    "g": 30,
+    "h": 30
+  },
+  "metrics": [
+    {
+      "est_headwind_ge_3_mae_mah": 58.06954487648702,
+      "est_headwind_ge_3_max_underprediction_mah": 176.70250155192616,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_mah": 35.63555808568861,
+      "group_g_max_underprediction_mah": 176.70250155192616,
+      "group_g_n": 30,
+      "group_h_mae_mah": 53.961853016836265,
+      "group_h_max_underprediction_mah": 119.66218286778303,
+      "group_h_n": 30,
+      "mae_bootstrap_95": {
+        "ci95_high": 55.10853370924886,
+        "ci95_low": 35.246974224467,
+        "estimate": 44.79870555126244
+      },
+      "mae_mah": 44.79870555126244,
+      "max_underprediction_mah": 176.70250155192616,
+      "mean_signed_error_mah": 13.442871148059206,
+      "mean_underprediction_mah": 15.677917201601616,
+      "median_absolute_error_mah": 34.166882462540116,
+      "name": "A_f2_ridge",
+      "p95_absolute_error_mah": 114.4950625968306,
+      "p95_underprediction_mah": 85.38024477570663,
+      "r_squared": 0.9872648530146458,
+      "rmse_mah": 59.839352493816946,
+      "wape": 0.024761186598061292
+    },
+    {
+      "est_headwind_ge_3_mae_mah": 52.37664251055785,
+      "est_headwind_ge_3_max_underprediction_mah": 149.17709636582003,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_mah": 24.501621634704424,
+      "group_g_max_underprediction_mah": 65.03695455314187,
+      "group_g_n": 30,
+      "group_h_mae_mah": 52.0977507396035,
+      "group_h_max_underprediction_mah": 149.17709636582003,
+      "group_h_n": 30,
+      "mae_bootstrap_95": {
+        "ci95_high": 48.353942923372635,
+        "ci95_low": 28.985158649775283,
+        "estimate": 38.29968618715395
+      },
+      "mae_mah": 38.29968618715395,
+      "max_underprediction_mah": 149.17709636582003,
+      "mean_signed_error_mah": 10.84238782604715,
+      "mean_underprediction_mah": 13.728649180553406,
+      "median_absolute_error_mah": 24.211443092670265,
+      "name": "C_f3_tilt_ridge",
+      "p95_absolute_error_mah": 129.94231477978423,
+      "p95_underprediction_mah": 65.1979884789362,
+      "r_squared": 0.9894348638155613,
+      "rmse_mah": 54.50325684171788,
+      "wape": 0.021169041932297194
+    },
+    {
+      "est_headwind_ge_3_mae_mah": 55.28611274138291,
+      "est_headwind_ge_3_max_underprediction_mah": 170.29666115026384,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_mah": 27.784415382997157,
+      "group_g_max_underprediction_mah": 71.0713044882009,
+      "group_g_n": 30,
+      "group_h_mae_mah": 55.49395867073763,
+      "group_h_max_underprediction_mah": 170.29666115026384,
+      "group_h_n": 30,
+      "mae_bootstrap_95": {
+        "ci95_high": 54.65664094417375,
+        "ci95_low": 30.51034264363105,
+        "estimate": 41.6391870268674
+      },
+      "mae_mah": 41.6391870268674,
+      "max_underprediction_mah": 170.29666115026384,
+      "mean_signed_error_mah": 10.324146317255757,
+      "mean_underprediction_mah": 15.657520354805818,
+      "median_absolute_error_mah": 23.560901818986622,
+      "name": "E_f3_forest_ridge",
+      "p95_absolute_error_mah": 150.05131878722804,
+      "p95_underprediction_mah": 52.21890772698092,
+      "r_squared": 0.9859249538414366,
+      "rmse_mah": 62.908570766699185,
+      "wape": 0.023014854270377055
+    },
+    {
+      "est_headwind_ge_3_mae_mah": 248.4508784142787,
+      "est_headwind_ge_3_max_underprediction_mah": 80.05123914968885,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_mah": 137.6918110734455,
+      "group_g_max_underprediction_mah": 305.58722745336786,
+      "group_g_n": 30,
+      "group_h_mae_mah": 253.31901730241847,
+      "group_h_max_underprediction_mah": 17.86310724550208,
+      "group_h_n": 30,
+      "mae_bootstrap_95": {
+        "ci95_high": 242.05031576276707,
+        "ci95_low": 152.3336779980323,
+        "estimate": 195.50541418793193
+      },
+      "mae_mah": 195.50541418793193,
+      "max_underprediction_mah": 305.58722745336786,
+      "mean_signed_error_mah": 93.51946566473164,
+      "mean_underprediction_mah": 50.99297426160017,
+      "median_absolute_error_mah": 156.85917154476851,
+      "name": "nominal_time_x_current",
+      "p95_absolute_error_mah": 604.7142456903154,
+      "p95_underprediction_mah": 216.184341048424,
+      "r_squared": 0.7523915902650417,
+      "rmse_mah": 263.85638014079103,
+      "wape": 0.10805995356493561
+    },
+    {
+      "est_headwind_ge_3_mae_mah": 52.58167986597804,
+      "est_headwind_ge_3_max_underprediction_mah": 187.6078661018969,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_mah": 31.431821244142448,
+      "group_g_max_underprediction_mah": 187.6078661018969,
+      "group_g_n": 30,
+      "group_h_mae_mah": 44.94461661572008,
+      "group_h_max_underprediction_mah": 174.21078486310785,
+      "group_h_n": 30,
+      "mae_bootstrap_95": {
+        "ci95_high": 49.037355058563094,
+        "ci95_low": 28.4811053057536,
+        "estimate": 38.18821892993127
+      },
+      "mae_mah": 38.18821892993127,
+      "max_underprediction_mah": 187.6078661018969,
+      "mean_signed_error_mah": 12.105571882454466,
+      "mean_underprediction_mah": 13.041323523738397,
+      "median_absolute_error_mah": 23.627683012110197,
+      "name": "B_f2_neural_mean",
+      "p95_absolute_error_mah": 122.10298305329398,
+      "p95_underprediction_mah": 44.41823120591865,
+      "r_squared": 0.9888310969522504,
+      "rmse_mah": 56.03897268036955,
+      "wape": 0.021107431635265135
+    },
+    {
+      "est_headwind_ge_3_mae_mah": 55.100724720809495,
+      "est_headwind_ge_3_max_underprediction_mah": 127.28707389278225,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_mah": 26.1265398154305,
+      "group_g_max_underprediction_mah": 123.56997729406294,
+      "group_g_n": 30,
+      "group_h_mae_mah": 51.66185142062663,
+      "group_h_max_underprediction_mah": 127.28707389278225,
+      "group_h_n": 30,
+      "mae_bootstrap_95": {
+        "ci95_high": 49.48586602977445,
+        "ci95_low": 29.65938779280209,
+        "estimate": 38.894195618028576
+      },
+      "mae_mah": 38.894195618028576,
+      "max_underprediction_mah": 127.28707389278225,
+      "mean_signed_error_mah": 13.640071899611751,
+      "mean_underprediction_mah": 12.627061859208409,
+      "median_absolute_error_mah": 24.54681439356557,
+      "name": "D_f3_tilt_neural_mean",
+      "p95_absolute_error_mah": 115.81536607171563,
+      "p95_underprediction_mah": 88.1485352948268,
+      "r_squared": 0.9892255620886072,
+      "rmse_mah": 55.04048042265325,
+      "wape": 0.021497639796254426
+    },
+    {
+      "est_headwind_ge_3_mae_mah": 59.963444094228294,
+      "est_headwind_ge_3_max_underprediction_mah": 191.43074820498987,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_mah": 31.127754167055297,
+      "group_g_max_underprediction_mah": 191.43074820498987,
+      "group_g_n": 30,
+      "group_h_mae_mah": 54.237733770669266,
+      "group_h_max_underprediction_mah": 158.54473756868174,
+      "group_h_n": 30,
+      "mae_bootstrap_95": {
+        "ci95_high": 54.14823737745918,
+        "ci95_low": 32.40959966340912,
+        "estimate": 42.68274396886227
+      },
+      "mae_mah": 42.68274396886227,
+      "max_underprediction_mah": 191.43074820498987,
+      "mean_signed_error_mah": 14.221540842859687,
+      "mean_underprediction_mah": 14.230601563001297,
+      "median_absolute_error_mah": 26.260180748606103,
+      "name": "B_f2_neural_seed_20260924",
+      "p95_absolute_error_mah": 125.31093069860394,
+      "p95_underprediction_mah": 72.31405170885473,
+      "r_squared": 0.9869389732382499,
+      "rmse_mah": 60.60013117441306,
+      "wape": 0.023591650136428794
+    },
+    {
+      "est_headwind_ge_3_mae_mah": 60.835031209856346,
+      "est_headwind_ge_3_max_underprediction_mah": 150.12145412199789,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_mah": 36.67590247562969,
+      "group_g_max_underprediction_mah": 150.12145412199789,
+      "group_g_n": 30,
+      "group_h_mae_mah": 56.6716400813915,
+      "group_h_max_underprediction_mah": 95.32469210824502,
+      "group_h_n": 30,
+      "mae_bootstrap_95": {
+        "ci95_high": 56.84489237932768,
+        "ci95_low": 37.27923658907803,
+        "estimate": 46.67377127851059
+      },
+      "mae_mah": 46.67377127851059,
+      "max_underprediction_mah": 150.12145412199789,
+      "mean_signed_error_mah": 18.76572615763096,
+      "mean_underprediction_mah": 13.95402256043982,
+      "median_absolute_error_mah": 36.680298531964695,
+      "name": "D_f3_tilt_neural_seed_20260924",
+      "p95_absolute_error_mah": 120.51920033231954,
+      "p95_underprediction_mah": 68.20139616999565,
+      "r_squared": 0.9870235858418708,
+      "rmse_mah": 60.40352081811028,
+      "wape": 0.025797574854924947
+    },
+    {
+      "est_headwind_ge_3_mae_mah": 53.60260091206872,
+      "est_headwind_ge_3_max_underprediction_mah": 191.55321067603882,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_mah": 34.144898303944196,
+      "group_g_max_underprediction_mah": 191.55321067603882,
+      "group_g_n": 30,
+      "group_h_mae_mah": 44.73929019589679,
+      "group_h_max_underprediction_mah": 178.73435190619375,
+      "group_h_n": 30,
+      "mae_bootstrap_95": {
+        "ci95_high": 51.00302617659485,
+        "ci95_low": 28.92594311647927,
+        "estimate": 39.44209424992049
+      },
+      "mae_mah": 39.44209424992049,
+      "max_underprediction_mah": 191.55321067603882,
+      "mean_signed_error_mah": 6.1959539865878694,
+      "mean_underprediction_mah": 16.62307013166631,
+      "median_absolute_error_mah": 25.396863873677603,
+      "name": "B_f2_neural_seed_20260925",
+      "p95_absolute_error_mah": 123.46003724003133,
+      "p95_underprediction_mah": 56.60145310898579,
+      "r_squared": 0.9877111990397255,
+      "rmse_mah": 58.781364016685785,
+      "wape": 0.021800474891468816
+    },
+    {
+      "est_headwind_ge_3_mae_mah": 53.68592755393195,
+      "est_headwind_ge_3_max_underprediction_mah": 139.14051190334658,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_mah": 27.20294625374306,
+      "group_g_max_underprediction_mah": 125.06615920376998,
+      "group_g_n": 30,
+      "group_h_mae_mah": 49.712971363903115,
+      "group_h_max_underprediction_mah": 139.14051190334658,
+      "group_h_n": 30,
+      "mae_bootstrap_95": {
+        "ci95_high": 48.98316154743703,
+        "ci95_low": 28.838296677343575,
+        "estimate": 38.457958808823086
+      },
+      "mae_mah": 38.457958808823086,
+      "max_underprediction_mah": 139.14051190334658,
+      "mean_signed_error_mah": 6.136659146331057,
+      "mean_underprediction_mah": 16.160649831246015,
+      "median_absolute_error_mah": 24.315992860735264,
+      "name": "D_f3_tilt_neural_seed_20260925",
+      "p95_absolute_error_mah": 127.09886095761273,
+      "p95_underprediction_mah": 105.73422332932641,
+      "r_squared": 0.9889638414479331,
+      "rmse_mah": 55.70496044373487,
+      "wape": 0.021256522538495276
+    },
+    {
+      "est_headwind_ge_3_mae_mah": 60.19682252183989,
+      "est_headwind_ge_3_max_underprediction_mah": 185.3532651144485,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_mah": 38.21820105185822,
+      "group_g_max_underprediction_mah": 179.83963942466153,
+      "group_g_n": 30,
+      "group_h_mae_mah": 52.37336149549707,
+      "group_h_max_underprediction_mah": 185.3532651144485,
+      "group_h_n": 30,
+      "mae_bootstrap_95": {
+        "ci95_high": 56.02989099571128,
+        "ci95_low": 35.41726719348394,
+        "estimate": 45.29578127367765
+      },
+      "mae_mah": 45.29578127367765,
+      "max_underprediction_mah": 185.3532651144485,
+      "mean_signed_error_mah": 15.899220817915865,
+      "mean_underprediction_mah": 14.69828022788089,
+      "median_absolute_error_mah": 38.39644008934431,
+      "name": "B_f2_neural_seed_20260926",
+      "p95_absolute_error_mah": 113.91749796115467,
+      "p95_underprediction_mah": 78.76949756531934,
+      "r_squared": 0.9867043571965318,
+      "rmse_mah": 61.141990617044854,
+      "wape": 0.025035930802489365
+    },
+    {
+      "est_headwind_ge_3_mae_mah": 56.06920629521744,
+      "est_headwind_ge_3_max_underprediction_mah": 147.3960176667547,
+      "est_headwind_ge_3_n": 35,
+      "group_g_mae_mah": 27.738156043885542,
+      "group_g_max_underprediction_mah": 95.5223185564214,
+      "group_g_n": 30,
+      "group_h_mae_mah": 51.99257456752428,
+      "group_h_max_underprediction_mah": 147.3960176667547,
+      "group_h_n": 30,
+      "mae_bootstrap_95": {
+        "ci95_high": 50.256507701827125,
+        "ci95_low": 30.208697406936704,
+        "estimate": 39.86536530570491
+      },
+      "mae_mah": 39.86536530570491,
+      "max_underprediction_mah": 147.3960176667547,
+      "mean_signed_error_mah": 16.01783039487329,
+      "mean_underprediction_mah": 11.92376745541581,
+      "median_absolute_error_mah": 25.90915157658401,
+      "name": "D_f3_tilt_neural_seed_20260926",
+      "p95_absolute_error_mah": 109.19261006560474,
+      "p95_underprediction_mah": 79.90754647043674,
+      "r_squared": 0.9888570440433433,
+      "rmse_mah": 55.97384122565564,
+      "wape": 0.022034425704664608
+    }
+  ],
+  "milestone": "M19_confirmation",
+  "neural_epochs": {
+    "B_f2_64_32": {
+      "20260924": {
+        "final_epochs": 461,
+        "fold_best_epochs": [
+          416,
+          452,
+          504,
+          483,
+          461
+        ]
+      },
+      "20260925": {
+        "final_epochs": 398,
+        "fold_best_epochs": [
+          398,
+          496,
+          384,
+          414,
+          347
+        ]
+      },
+      "20260926": {
+        "final_epochs": 512,
+        "fold_best_epochs": [
+          592,
+          512,
+          517,
+          504,
+          488
+        ]
+      }
+    },
+    "D_f3_tilt_1024": {
+      "20260924": {
+        "final_epochs": 343,
+        "fold_best_epochs": [
+          343,
+          249,
+          390,
+          277,
+          353
+        ]
+      },
+      "20260925": {
+        "final_epochs": 347,
+        "fold_best_epochs": [
+          347,
+          406,
+          384,
+          344,
+          344
+        ]
+      },
+      "20260926": {
+        "final_epochs": 417,
+        "fold_best_epochs": [
+          302,
+          417,
+          447,
+          386,
+          447
+        ]
+      }
+    }
+  },
+  "primary_comparisons": [
+    {
+      "candidate": "C_f3_tilt_ridge",
+      "ci95_high": 1.8609434745591225,
+      "ci95_low": -15.386057354282755,
+      "estimate": -6.499019364108479,
+      "flights_candidate_closer": 32,
+      "group_g": {
+        "ci95_high": 1.1643919234540447,
+        "ci95_low": -25.302838875281857,
+        "estimate": -11.133936450984182
+      },
+      "group_h": {
+        "ci95_high": 9.561191074285507,
+        "ci95_low": -13.319672272346578,
+        "estimate": -1.8641022772327764
+      },
+      "primary": true,
+      "reference": "A_f2_ridge"
+    },
+    {
+      "candidate": "D_f3_tilt_neural_mean",
+      "ci95_high": 6.460793189847388,
+      "ci95_low": -5.033377858209545,
+      "estimate": 0.7059766880973086,
+      "flights_candidate_closer": 32,
+      "group_g": {
+        "ci95_high": 1.9126023754852783,
+        "ci95_low": -12.645420681208192,
+        "estimate": -5.305281428711946
+      },
+      "group_h": {
+        "ci95_high": 15.230943241135654,
+        "ci95_low": -1.941467551904741,
+        "estimate": 6.717234804906563
+      },
+      "primary": true,
+      "reference": "B_f2_neural_mean"
+    },
+    {
+      "candidate": "C_f3_tilt_ridge",
+      "ci95_high": 3.145839228902021,
+      "ci95_low": -9.72323359731422,
+      "estimate": -3.3395008397134327,
+      "flights_candidate_closer": 33,
+      "group_g": {
+        "ci95_high": 3.8726690206501204,
+        "ci95_low": -10.381165899957212,
+        "estimate": -3.2827937482927307
+      },
+      "group_h": {
+        "ci95_high": 7.1700112535841285,
+        "ci95_low": -14.681565526183231,
+        "estimate": -3.396207931134135
+      },
+      "primary": true,
+      "reference": "E_f3_forest_ridge"
+    }
+  ],
+  "protocol": "DECISIONS.md D029",
+  "selection_on_confirmation": false,
+  "tilt_model": {
+    "intercept_m_s": 4.921937640791219,
+    "saturated_training_flights": 112,
+    "throttle_coefficient_m_s": 16.09525041551659
+  },
+  "training_flights": 289
+}

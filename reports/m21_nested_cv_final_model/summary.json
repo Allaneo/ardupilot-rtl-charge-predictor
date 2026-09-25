@@ -1,0 +1,307 @@
+{
+  "milestone": "M21_nested_cv_final_model",
+  "protocol": "DECISIONS.md D032",
+  "flights": 349,
+  "candidates": [
+    "Ridge",
+    "network 256",
+    "network 1024",
+    "network 64-32-16"
+  ],
+  "seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "outer_folds": [
+    {
+      "fold": 0,
+      "chosen": "network 256",
+      "inner_cv_mae_mah": {
+        "Ridge": 25.415661425518753,
+        "network 256": 23.243774209339957,
+        "network 1024": 27.489381194599574,
+        "network 64-32-16": 27.88223122627332
+      },
+      "outer_mae_mah": 22.597953461897802
+    },
+    {
+      "fold": 1,
+      "chosen": "network 256",
+      "inner_cv_mae_mah": {
+        "Ridge": 27.236772690605374,
+        "network 256": 25.574784148653332,
+        "network 1024": 27.325353882488468,
+        "network 64-32-16": 27.609717686301426
+      },
+      "outer_mae_mah": 16.558536220180564
+    },
+    {
+      "fold": 2,
+      "chosen": "network 256",
+      "inner_cv_mae_mah": {
+        "Ridge": 27.766858232764058,
+        "network 256": 24.693851497405245,
+        "network 1024": 29.11341216558585,
+        "network 64-32-16": 26.859193973039453
+      },
+      "outer_mae_mah": 21.46491048113206
+    },
+    {
+      "fold": 3,
+      "chosen": "Ridge",
+      "inner_cv_mae_mah": {
+        "Ridge": 24.965345696344176,
+        "network 256": 25.56397994767554,
+        "network 1024": 25.905809892520608,
+        "network 64-32-16": 27.1305721070222
+      },
+      "outer_mae_mah": 25.89892719705191
+    },
+    {
+      "fold": 4,
+      "chosen": "network 256",
+      "inner_cv_mae_mah": {
+        "Ridge": 27.96264151452379,
+        "network 256": 25.728967492000656,
+        "network 1024": 26.8997069202921,
+        "network 64-32-16": 27.481901429654442
+      },
+      "outer_mae_mah": 21.384566592291865
+    }
+  ],
+  "final_choice": "network 256",
+  "final_inner_cv_mae_mah": {
+    "Ridge": 25.067537012967257,
+    "network 256": 20.937447182951367,
+    "network 1024": 21.167221096183614,
+    "network 64-32-16": 22.141757731100757
+  },
+  "tilt_model": {
+    "intercept_m_s": 5.377024268379603,
+    "throttle_coefficient_m_s": 15.086594072623944
+  },
+  "caveat": "Candidate set chosen after M20, which used 289 of these 349 flights; nested estimate slightly optimistic.",
+  "results": {
+    "nested_selected": {
+      "mae": {
+        "estimate": 21.581541576179088,
+        "ci95_low": 19.09827110745354,
+        "ci95_high": 24.200461158506908
+      },
+      "rmse_mah": 32.657987096748776,
+      "mean_signed_error_mah": -0.4344601767881322,
+      "p95_underprediction_mah": 51.100844928375935,
+      "max_underprediction_mah": 129.691531490967,
+      "mae_percent_of_charge": 1.2411830051076689,
+      "by_headwind": {
+        "tailwind": {
+          "n": 135,
+          "mae_mah": 13.055396331226715
+        },
+        "0-2": {
+          "n": 77,
+          "mae_mah": 13.32617390436725
+        },
+        "2-4": {
+          "n": 53,
+          "mae_mah": 24.239174713240825
+        },
+        "4+": {
+          "n": 84,
+          "mae_mah": 41.174855415867306
+        }
+      },
+      "by_source": {
+        "confirmation": {
+          "n": 60,
+          "mae_mah": 33.61361880658389
+        },
+        "development": {
+          "n": 250,
+          "mae_mah": 16.205828353484723
+        },
+        "headwind_training": {
+          "n": 39,
+          "mae_mah": 37.53035367487921
+        }
+      }
+    },
+    "fixed_Ridge": {
+      "mae": {
+        "estimate": 25.067537012967257,
+        "ci95_low": 22.338523587502383,
+        "ci95_high": 28.024771640934166
+      },
+      "rmse_mah": 37.21990718796268,
+      "mean_signed_error_mah": -0.3476089998210222,
+      "p95_underprediction_mah": 54.45515960351239,
+      "max_underprediction_mah": 172.55949519094065,
+      "mae_percent_of_charge": 1.4378940916805423,
+      "by_headwind": {
+        "tailwind": {
+          "n": 135,
+          "mae_mah": 14.495461399767208
+        },
+        "0-2": {
+          "n": 77,
+          "mae_mah": 14.677884062248612
+        },
+        "2-4": {
+          "n": 53,
+          "mae_mah": 29.63763640854957
+        },
+        "4+": {
+          "n": 84,
+          "mae_mah": 48.69870626322297
+        }
+      },
+      "by_source": {
+        "confirmation": {
+          "n": 60,
+          "mae_mah": 38.957236686662476
+        },
+        "development": {
+          "n": 250,
+          "mae_mah": 18.734808902936948
+        },
+        "headwind_training": {
+          "n": 39,
+          "mae_mah": 44.29317924593814
+        }
+      }
+    },
+    "fixed_network 256": {
+      "mae": {
+        "estimate": 20.937447182951367,
+        "ci95_low": 18.576086486962133,
+        "ci95_high": 23.44600531575223
+      },
+      "rmse_mah": 31.226041066825445,
+      "mean_signed_error_mah": -0.4717497129281752,
+      "p95_underprediction_mah": 45.614709432580305,
+      "max_underprediction_mah": 129.691531490967,
+      "mae_percent_of_charge": 1.2088357018385463,
+      "by_headwind": {
+        "tailwind": {
+          "n": 135,
+          "mae_mah": 14.004546595005765
+        },
+        "0-2": {
+          "n": 77,
+          "mae_mah": 13.077068530505729
+        },
+        "2-4": {
+          "n": 53,
+          "mae_mah": 23.97016660729411
+        },
+        "4+": {
+          "n": 84,
+          "mae_mah": 37.37145439867523
+        }
+      },
+      "by_source": {
+        "confirmation": {
+          "n": 60,
+          "mae_mah": 31.42851778212049
+        },
+        "development": {
+          "n": 250,
+          "mae_mah": 16.7017040001396
+        },
+        "headwind_training": {
+          "n": 39,
+          "mae_mah": 31.949538458664048
+        }
+      }
+    },
+    "fixed_network 1024": {
+      "mae": {
+        "estimate": 21.167221096183614,
+        "ci95_low": 18.852311197859375,
+        "ci95_high": 23.691687560696593
+      },
+      "rmse_mah": 31.68783693382437,
+      "mean_signed_error_mah": 0.3648260765038129,
+      "p95_underprediction_mah": 44.192354977563795,
+      "max_underprediction_mah": 135.0093821068872,
+      "mae_percent_of_charge": 1.2062164420033643,
+      "by_headwind": {
+        "tailwind": {
+          "n": 135,
+          "mae_mah": 14.856873977413382
+        },
+        "0-2": {
+          "n": 77,
+          "mae_mah": 13.022359653033325
+        },
+        "2-4": {
+          "n": 53,
+          "mae_mah": 21.86305697174302
+        },
+        "4+": {
+          "n": 84,
+          "mae_mah": 38.33593408132533
+        }
+      },
+      "by_source": {
+        "confirmation": {
+          "n": 60,
+          "mae_mah": 32.390040424854035
+        },
+        "development": {
+          "n": 250,
+          "mae_mah": 16.722954653943805
+        },
+        "headwind_training": {
+          "n": 39,
+          "mae_mah": 32.390232656176586
+        }
+      }
+    },
+    "fixed_network 64-32-16": {
+      "mae": {
+        "estimate": 22.141757731100757,
+        "ci95_low": 19.617516653303372,
+        "ci95_high": 24.784232672321494
+      },
+      "rmse_mah": 33.088525483972276,
+      "mean_signed_error_mah": -0.7943416456855337,
+      "p95_underprediction_mah": 52.93641957136431,
+      "max_underprediction_mah": 141.2170581297646,
+      "mae_percent_of_charge": 1.2731279744766268,
+      "by_headwind": {
+        "tailwind": {
+          "n": 135,
+          "mae_mah": 14.36938381212115
+        },
+        "0-2": {
+          "n": 77,
+          "mae_mah": 13.967727924146416
+        },
+        "2-4": {
+          "n": 53,
+          "mae_mah": 23.08429080012215
+        },
+        "4+": {
+          "n": 84,
+          "mae_mah": 41.531240130381676
+        }
+      },
+      "by_source": {
+        "confirmation": {
+          "n": 60,
+          "mae_mah": 37.16029666095127
+        },
+        "development": {
+          "n": 250,
+          "mae_mah": 16.50833754833258
+        },
+        "headwind_training": {
+          "n": 39,
+          "mae_mah": 35.14798106189595
+        }
+      }
+    }
+  }
+}

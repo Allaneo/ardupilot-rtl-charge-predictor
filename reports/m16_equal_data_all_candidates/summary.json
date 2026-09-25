@@ -1,0 +1,699 @@
+{
+  "candidate_selection_on_test": false,
+  "milestone": "M16_equal_data_all_candidates",
+  "paired_reference": "ridge__f2_physics_informed refitted on 211 flights",
+  "posthoc_caveat": "Same 39 test flights as M7/M14/M15; equal-data refits and seed means were added after earlier test results were seen.",
+  "reproduction_max_abs_mah": {
+    "neural_network__f0_route_and_wind": 4.547473508864641e-13,
+    "neural_network__f1_vehicle_symptoms": 2.2737367544323206e-12,
+    "neural_network__f2_physics_informed": 9.094947017729282e-13,
+    "neural_network_true_wind_oracle": 9.094947017729282e-13,
+    "ridge__f0_route_and_wind": 3.637978807091713e-12,
+    "ridge__f1_vehicle_symptoms": 9.094947017729282e-13,
+    "ridge__f2_physics_informed": 1.3642420526593924e-12,
+    "xgboost__f0_route_and_wind": 0.00048828125,
+    "xgboost__f1_vehicle_symptoms": 0.0003662109375,
+    "xgboost__f2_physics_informed": 0.885498046875,
+    "xgboost_true_wind_oracle": 0.0001220703125
+  },
+  "results": [
+    {
+      "frozen_172_mae_mah": 70.31356004691034,
+      "high_headwind_mae_mah": 121.63309631520158,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 99.68127964042968,
+        "ci95_low": 57.49968077356669,
+        "estimate": 77.23859736632905
+      },
+      "mae_mah": 77.23859736632905,
+      "max_underprediction_mah": 349.9983952292905,
+      "mean_signed_error_mah": 5.546853379428888,
+      "mean_underprediction_mah": 35.84587199345007,
+      "median_absolute_error_mah": 57.34157068183049,
+      "name": "ridge__f0_route_and_wind",
+      "p95_absolute_error_mah": 182.01376110911724,
+      "p95_underprediction_mah": 138.79405652824735,
+      "paired_vs_reference": {
+        "ci95_high": 68.32036472333645,
+        "ci95_low": 33.918467524437915,
+        "estimate": 50.495522353718265,
+        "flights_closer_than_reference": 6
+      },
+      "r_squared": 0.9524205264297936,
+      "rmse_mah": 102.50562295649141,
+      "source": "M7 frozen settings",
+      "wape": 0.048625755026517566
+    },
+    {
+      "frozen_172_mae_mah": 38.83536268331829,
+      "high_headwind_mae_mah": 76.75993741118309,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 51.069725723239415,
+        "ci95_low": 22.656261180848364,
+        "estimate": 34.9273229961278
+      },
+      "mae_mah": 34.9273229961278,
+      "max_underprediction_mah": 266.18149772926745,
+      "mean_signed_error_mah": -3.3423864451732763,
+      "mean_underprediction_mah": 19.13485472065054,
+      "median_absolute_error_mah": 20.9006375254844,
+      "name": "neural_network__f0_route_and_wind",
+      "p95_absolute_error_mah": 86.67472658487706,
+      "p95_underprediction_mah": 81.69290550427043,
+      "paired_vs_reference": {
+        "ci95_high": 20.06339586566902,
+        "ci95_low": -2.9191212909119844,
+        "estimate": 8.18424798351703,
+        "flights_closer_than_reference": 18
+      },
+      "r_squared": 0.9850714177779776,
+      "rmse_mah": 57.417880254256275,
+      "source": "M7 frozen settings",
+      "wape": 0.02198858484815185
+    },
+    {
+      "frozen_172_mae_mah": 59.68697269615115,
+      "high_headwind_mae_mah": 70.97766881545157,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 62.02016150124325,
+        "ci95_low": 35.84597356200906,
+        "estimate": 48.311489970665384
+      },
+      "mae_mah": 48.311489970665384,
+      "max_underprediction_mah": 173.89897460937482,
+      "mean_signed_error_mah": -5.642971254329734,
+      "mean_underprediction_mah": 26.97723061249756,
+      "median_absolute_error_mah": 36.975012207031114,
+      "name": "xgboost__f0_route_and_wind",
+      "p95_absolute_error_mah": 121.73053588867194,
+      "p95_underprediction_mah": 115.49948425292969,
+      "paired_vs_reference": {
+        "ci95_high": 36.04454673503732,
+        "ci95_low": 7.353218120370107,
+        "estimate": 21.568414958054607,
+        "flights_closer_than_reference": 14
+      },
+      "r_squared": 0.9815138948321962,
+      "rmse_mah": 63.894074341084306,
+      "source": "M7 frozen settings",
+      "wape": 0.030414621139970684
+    },
+    {
+      "frozen_172_mae_mah": 69.27635509552482,
+      "high_headwind_mae_mah": 119.43722839812715,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 98.79656595215745,
+        "ci95_low": 49.317331533721855,
+        "estimate": 72.4381755794522
+      },
+      "mae_mah": 72.4381755794522,
+      "max_underprediction_mah": 284.8332444430712,
+      "mean_signed_error_mah": 14.190812291242963,
+      "mean_underprediction_mah": 29.12368164410461,
+      "median_absolute_error_mah": 52.93551532175252,
+      "name": "ridge__f1_vehicle_symptoms",
+      "p95_absolute_error_mah": 212.61351289316886,
+      "p95_underprediction_mah": 123.97669606283051,
+      "paired_vs_reference": {
+        "ci95_high": 69.39558930946255,
+        "ci95_low": 25.721203483998686,
+        "estimate": 45.69510056684141,
+        "flights_closer_than_reference": 9
+      },
+      "r_squared": 0.9481573365170822,
+      "rmse_mah": 106.99944522629384,
+      "source": "M7 frozen settings",
+      "wape": 0.04560363730569023
+    },
+    {
+      "frozen_172_mae_mah": 50.39449390133988,
+      "high_headwind_mae_mah": 96.9379391393438,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 69.34770159527658,
+        "ci95_low": 38.857046088732865,
+        "estimate": 53.31251220610458
+      },
+      "mae_mah": 53.31251220610458,
+      "max_underprediction_mah": 207.38463453765462,
+      "mean_signed_error_mah": 12.59499770514382,
+      "mean_underprediction_mah": 20.358757250480377,
+      "median_absolute_error_mah": 37.04990920781165,
+      "name": "neural_network__f1_vehicle_symptoms",
+      "p95_absolute_error_mah": 175.1836692787521,
+      "p95_underprediction_mah": 75.83393289851765,
+      "paired_vs_reference": {
+        "ci95_high": 40.213250675983275,
+        "ci95_low": 13.765608302608788,
+        "estimate": 26.569437193493805,
+        "flights_closer_than_reference": 10
+      },
+      "r_squared": 0.9756830452647351,
+      "rmse_mah": 73.28118207839975,
+      "source": "M7 frozen settings",
+      "wape": 0.033563027382374086
+    },
+    {
+      "frozen_172_mae_mah": 64.01797639426854,
+      "high_headwind_mae_mah": 86.85282886319463,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 69.94298323634312,
+        "ci95_low": 38.25998398718778,
+        "estimate": 53.35555592363327
+      },
+      "mae_mah": 53.35555592363327,
+      "max_underprediction_mah": 165.46391601562482,
+      "mean_signed_error_mah": -2.1805219604595423,
+      "mean_underprediction_mah": 27.7680389420464,
+      "median_absolute_error_mah": 39.56005859375,
+      "name": "xgboost__f1_vehicle_symptoms",
+      "p95_absolute_error_mah": 145.6039086914064,
+      "p95_underprediction_mah": 88.9066674804689,
+      "paired_vs_reference": {
+        "ci95_high": 42.55838230169136,
+        "ci95_low": 11.515229154356748,
+        "estimate": 26.612480911022494,
+        "flights_closer_than_reference": 13
+      },
+      "r_squared": 0.9751842755332427,
+      "rmse_mah": 74.02890954875387,
+      "source": "M7 frozen settings",
+      "wape": 0.03359012566400204
+    },
+    {
+      "frozen_172_mae_mah": 31.02570705765036,
+      "high_headwind_mae_mah": 40.47086661911457,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 35.11608894689572,
+        "ci95_low": 19.294111032721197,
+        "estimate": 26.743075012610777
+      },
+      "mae_mah": 26.743075012610777,
+      "max_underprediction_mah": 122.29246903042394,
+      "mean_signed_error_mah": -1.790642895102066,
+      "mean_underprediction_mah": 14.266858953856419,
+      "median_absolute_error_mah": 14.780690815675825,
+      "name": "ridge__f2_physics_informed",
+      "p95_absolute_error_mah": 64.82367243573186,
+      "p95_underprediction_mah": 50.75424444095024,
+      "paired_vs_reference": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "estimate": 0.0,
+        "flights_closer_than_reference": 0
+      },
+      "r_squared": 0.9937661106376348,
+      "rmse_mah": 37.103716941393095,
+      "source": "M7 frozen settings",
+      "wape": 0.016836170756071817
+    },
+    {
+      "frozen_172_mae_mah": 34.98479806423117,
+      "high_headwind_mae_mah": 50.461962211919094,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 37.57175839440865,
+        "ci95_low": 17.03185477118104,
+        "estimate": 25.591754216349507
+      },
+      "mae_mah": 25.591754216349507,
+      "max_underprediction_mah": 208.70533859014995,
+      "mean_signed_error_mah": -0.43475326788004853,
+      "mean_underprediction_mah": 13.01325374211478,
+      "median_absolute_error_mah": 20.92242325042389,
+      "name": "neural_network__f2_physics_informed",
+      "p95_absolute_error_mah": 50.3407144966208,
+      "p95_underprediction_mah": 34.56380859219181,
+      "paired_vs_reference": {
+        "ci95_high": 8.356866902692849,
+        "ci95_low": -10.356913832705557,
+        "estimate": -1.1513207962612644,
+        "flights_closer_than_reference": 24
+      },
+      "r_squared": 0.9920032920628598,
+      "rmse_mah": 42.02362286745148,
+      "source": "M7 frozen settings",
+      "wape": 0.016111353826390742
+    },
+    {
+      "frozen_172_mae_mah": 45.943942519743885,
+      "high_headwind_mae_mah": 61.756462489496734,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 57.1117004993856,
+        "ci95_low": 32.68912291918647,
+        "estimate": 44.273989657664515
+      },
+      "mae_mah": 44.273989657664515,
+      "max_underprediction_mah": 170.73615722656223,
+      "mean_signed_error_mah": -2.0942385945741253,
+      "mean_underprediction_mah": 23.18411412611932,
+      "median_absolute_error_mah": 32.860528564453034,
+      "name": "xgboost__f2_physics_informed",
+      "p95_absolute_error_mah": 132.07708862304702,
+      "p95_underprediction_mah": 98.76160339355475,
+      "paired_vs_reference": {
+        "ci95_high": 31.261580573596408,
+        "ci95_low": 4.870553677182928,
+        "estimate": 17.53091464505374,
+        "flights_closer_than_reference": 15
+      },
+      "r_squared": 0.9841508705636952,
+      "rmse_mah": 59.16169104271818,
+      "source": "M7 frozen settings",
+      "wape": 0.027872802569543696
+    },
+    {
+      "frozen_172_mae_mah": 34.48567831439415,
+      "high_headwind_mae_mah": 57.62246612202193,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 39.08869248873215,
+        "ci95_low": 19.768726215098997,
+        "estimate": 28.34362431756639
+      },
+      "mae_mah": 28.34362431756639,
+      "max_underprediction_mah": 185.4016607896956,
+      "mean_signed_error_mah": -1.227313239213202,
+      "mean_underprediction_mah": 14.785468778389799,
+      "median_absolute_error_mah": 18.60457654407196,
+      "name": "neural_network_true_wind_oracle",
+      "p95_absolute_error_mah": 71.5226415480741,
+      "p95_underprediction_mah": 68.81826520762164,
+      "paired_vs_reference": {
+        "ci95_high": 9.119219334917187,
+        "ci95_low": -5.775591284134362,
+        "estimate": 1.6005493049556208,
+        "flights_closer_than_reference": 17
+      },
+      "r_squared": 0.9918511189045832,
+      "rmse_mah": 42.42158230198446,
+      "source": "M7 frozen settings",
+      "wape": 0.01784380063367706
+    },
+    {
+      "frozen_172_mae_mah": 48.7536607522837,
+      "high_headwind_mae_mah": 62.609221617643435,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 53.44514634753405,
+        "ci95_low": 28.258535679014624,
+        "estimate": 40.047150726868004
+      },
+      "mae_mah": 40.047150726868004,
+      "max_underprediction_mah": 199.13449707031236,
+      "mean_signed_error_mah": -10.969420135038868,
+      "mean_underprediction_mah": 25.508285430953435,
+      "median_absolute_error_mah": 25.612310791015716,
+      "name": "xgboost_true_wind_oracle",
+      "p95_absolute_error_mah": 110.71712890624961,
+      "p95_underprediction_mah": 110.71712890624961,
+      "paired_vs_reference": {
+        "ci95_high": 27.325224916845738,
+        "ci95_low": 0.34882722071774436,
+        "estimate": 13.304075714257232,
+        "flights_closer_than_reference": 17
+      },
+      "r_squared": 0.9853632364034028,
+      "rmse_mah": 56.85391845169251,
+      "source": "M7 frozen settings",
+      "wape": 0.025211785391685705
+    },
+    {
+      "frozen_172_mae_mah": 394.4506953380553,
+      "high_headwind_mae_mah": 357.7565634522062,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 473.8243281299927,
+        "ci95_low": 313.4772396111821,
+        "estimate": 393.24611081749015
+      },
+      "mae_mah": 393.24611081749015,
+      "max_underprediction_mah": 968.5629087365867,
+      "mean_signed_error_mah": 27.231889972274693,
+      "mean_underprediction_mah": 183.00711042260775,
+      "median_absolute_error_mah": 381.16370829713355,
+      "name": "training_mean",
+      "p95_absolute_error_mah": 752.2013616877558,
+      "p95_underprediction_mah": 730.1592795861958,
+      "paired_vs_reference": {
+        "ci95_high": 446.7293570608127,
+        "ci95_low": 288.1782583411441,
+        "estimate": 366.50303580487935,
+        "flights_closer_than_reference": 0
+      },
+      "r_squared": -0.0033579932695222414,
+      "rmse_mah": 470.7234460625534,
+      "source": "M7 frozen settings",
+      "wape": 0.2475690872408041
+    },
+    {
+      "frozen_172_mae_mah": 167.87142376428847,
+      "high_headwind_mae_mah": 84.4848720354581,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 207.68278268782072,
+        "ci95_low": 130.76507730105172,
+        "estimate": 167.87142376428847
+      },
+      "mae_mah": 167.87142376428847,
+      "max_underprediction_mah": 498.3183238291924,
+      "mean_signed_error_mah": -137.7304155071525,
+      "mean_underprediction_mah": 152.80091963572048,
+      "median_absolute_error_mah": 137.45637232534045,
+      "name": "nominal_time_x_current",
+      "p95_absolute_error_mah": 433.49961902383137,
+      "p95_underprediction_mah": 433.49961902383137,
+      "paired_vs_reference": {
+        "ci95_high": 179.63918610968432,
+        "ci95_low": 105.38346809632728,
+        "estimate": 141.12834875167772,
+        "flights_closer_than_reference": 2
+      },
+      "r_squared": 0.804967724996181,
+      "rmse_mah": 207.5348886651223,
+      "source": "M7 frozen settings",
+      "wape": 0.10568388093843722
+    },
+    {
+      "frozen_172_mae_mah": 153.252504129699,
+      "high_headwind_mae_mah": 295.46601198783316,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 192.39509101449562,
+        "ci95_low": 122.8644839885568,
+        "estimate": 153.252504129699
+      },
+      "mae_mah": 153.252504129699,
+      "max_underprediction_mah": 722.9393755261522,
+      "mean_signed_error_mah": -153.252504129699,
+      "mean_underprediction_mah": 153.252504129699,
+      "median_absolute_error_mah": 109.65037607729778,
+      "name": "px4_style_multicopter_time_x_current",
+      "p95_absolute_error_mah": 307.04125966837296,
+      "p95_underprediction_mah": 307.04125966837296,
+      "paired_vs_reference": {
+        "ci95_high": 161.80939761038985,
+        "ci95_low": 98.41793345684539,
+        "estimate": 126.50942911708826,
+        "flights_closer_than_reference": 0
+      },
+      "r_squared": 0.8351168394343866,
+      "rmse_mah": 190.82093733797038,
+      "source": "M7 frozen settings",
+      "wape": 0.09648050297531305
+    },
+    {
+      "frozen_172_mae_mah": null,
+      "high_headwind_mae_mah": 36.54995160091859,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 33.44040650652627,
+        "ci95_low": 18.484371949209773,
+        "estimate": 25.371848035703344
+      },
+      "mae_mah": 25.371848035703344,
+      "max_underprediction_mah": 127.09801801201365,
+      "mean_signed_error_mah": 0.8517584507232338,
+      "mean_underprediction_mah": 12.260044792490056,
+      "median_absolute_error_mah": 17.32283111468564,
+      "name": "f3_learned_ridge",
+      "p95_absolute_error_mah": 59.966285480386766,
+      "p95_underprediction_mah": 49.821365788018795,
+      "paired_vs_reference": {
+        "ci95_high": 2.5768536189242814,
+        "ci95_low": -5.474641470825782,
+        "estimate": -1.3712269769074277,
+        "flights_closer_than_reference": 20
+      },
+      "r_squared": 0.9944987172345184,
+      "rmse_mah": 34.85538283045825,
+      "source": "M14 revised",
+      "wape": 0.01597291133217762
+    },
+    {
+      "frozen_172_mae_mah": null,
+      "high_headwind_mae_mah": 52.29923484152203,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 37.27839469319774,
+        "ci95_low": 17.80202389526239,
+        "estimate": 26.31784150847478
+      },
+      "mae_mah": 26.31784150847478,
+      "max_underprediction_mah": 177.344769042777,
+      "mean_signed_error_mah": -8.551065281595978,
+      "mean_underprediction_mah": 17.434453395035376,
+      "median_absolute_error_mah": 19.6038385719487,
+      "name": "f3_learned_neural_20260924",
+      "p95_absolute_error_mah": 75.36006323873009,
+      "p95_underprediction_mah": 57.026597389578804,
+      "paired_vs_reference": {
+        "ci95_high": 9.208688994627405,
+        "ci95_low": -10.305682987060024,
+        "estimate": -0.42523350413599614,
+        "flights_closer_than_reference": 19
+      },
+      "r_squared": 0.992496939755475,
+      "rmse_mah": 40.70587454670344,
+      "source": "M14 revised",
+      "wape": 0.016568463924173826
+    },
+    {
+      "frozen_172_mae_mah": null,
+      "high_headwind_mae_mah": 33.2643347462077,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 27.271091077183033,
+        "ci95_low": 11.534357929949392,
+        "estimate": 17.714568279379392
+      },
+      "mae_mah": 17.714568279379392,
+      "max_underprediction_mah": 166.4886132297711,
+      "mean_signed_error_mah": -4.47104997864187,
+      "mean_underprediction_mah": 11.09280912901063,
+      "median_absolute_error_mah": 12.04285522462078,
+      "name": "f3_learned_neural_20260925",
+      "p95_absolute_error_mah": 34.624913401104116,
+      "p95_underprediction_mah": 32.25068834511501,
+      "paired_vs_reference": {
+        "ci95_high": -1.8610878180842552,
+        "ci95_low": -16.354318883562698,
+        "estimate": -9.02850673323138,
+        "flights_closer_than_reference": 23
+      },
+      "r_squared": 0.9955252847195862,
+      "rmse_mah": 31.435514771209995,
+      "source": "M14 revised",
+      "wape": 0.01115225142512917
+    },
+    {
+      "frozen_172_mae_mah": null,
+      "high_headwind_mae_mah": 43.43435749505098,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 30.725785418061285,
+        "ci95_low": 15.028679803381896,
+        "estimate": 21.418340517311872
+      },
+      "mae_mah": 21.418340517311872,
+      "max_underprediction_mah": 163.865242131983,
+      "mean_signed_error_mah": -7.9449087041542,
+      "mean_underprediction_mah": 14.681624610733037,
+      "median_absolute_error_mah": 15.922000340478462,
+      "name": "f3_learned_neural_20260926",
+      "p95_absolute_error_mah": 50.78461095661733,
+      "p95_underprediction_mah": 50.78461095661733,
+      "paired_vs_reference": {
+        "ci95_high": 2.1657274138492504,
+        "ci95_low": -13.006811350817404,
+        "estimate": -5.324734495298901,
+        "flights_closer_than_reference": 21
+      },
+      "r_squared": 0.9948967329897748,
+      "rmse_mah": 33.57082537144437,
+      "source": "M14 revised",
+      "wape": 0.013483970638795686
+    },
+    {
+      "frozen_172_mae_mah": null,
+      "high_headwind_mae_mah": 48.3662145336464,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 42.86642819601023,
+        "ci95_low": 23.317044100749886,
+        "estimate": 32.532586170873984
+      },
+      "mae_mah": 32.532586170873984,
+      "max_underprediction_mah": 145.4657401027689,
+      "mean_signed_error_mah": 3.320415075417244,
+      "mean_underprediction_mah": 14.606085547728368,
+      "median_absolute_error_mah": 25.2674211504268,
+      "name": "f2_learned_ridge",
+      "p95_absolute_error_mah": 86.31555958004549,
+      "p95_underprediction_mah": 48.501195606925265,
+      "paired_vs_reference": {
+        "ci95_high": 13.136941026081896,
+        "ci95_low": -1.2977120567643678,
+        "estimate": 5.789511158263208,
+        "flights_closer_than_reference": 18
+      },
+      "r_squared": 0.9909714940029075,
+      "rmse_mah": 44.65250404054291,
+      "source": "M14 revised",
+      "wape": 0.020480972201258607
+    },
+    {
+      "frozen_172_mae_mah": null,
+      "high_headwind_mae_mah": 43.12255982843749,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 36.5595433048773,
+        "ci95_low": 18.13268354276521,
+        "estimate": 25.555724877685886
+      },
+      "mae_mah": 25.555724877685886,
+      "max_underprediction_mah": 187.61312109478422,
+      "mean_signed_error_mah": -0.3879451380864356,
+      "mean_underprediction_mah": 12.971835007886162,
+      "median_absolute_error_mah": 19.445808743349517,
+      "name": "f2_learned_neural_20260924",
+      "p95_absolute_error_mah": 55.478107905613165,
+      "p95_underprediction_mah": 32.9131282411251,
+      "paired_vs_reference": {
+        "ci95_high": 7.683994393898189,
+        "ci95_low": -10.211054686478581,
+        "estimate": -1.1873501349248856,
+        "flights_closer_than_reference": 20
+      },
+      "r_squared": 0.9930665885551618,
+      "rmse_mah": 39.13013619748371,
+      "source": "M14 revised",
+      "wape": 0.016088671464781875
+    },
+    {
+      "frozen_172_mae_mah": null,
+      "high_headwind_mae_mah": 59.894354932438695,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 47.27827965029167,
+        "ci95_low": 25.293096600136693,
+        "estimate": 35.40801031698743
+      },
+      "mae_mah": 35.40801031698743,
+      "max_underprediction_mah": 187.85341728841786,
+      "mean_signed_error_mah": -1.877494333066827,
+      "mean_underprediction_mah": 18.642752325027125,
+      "median_absolute_error_mah": 32.05767864328914,
+      "name": "f2_learned_neural_20260925",
+      "p95_absolute_error_mah": 95.13471698467724,
+      "p95_underprediction_mah": 76.17532781690544,
+      "paired_vs_reference": {
+        "ci95_high": 19.00929541537863,
+        "ci95_low": -1.800761321671255,
+        "estimate": 8.664935304376653,
+        "flights_closer_than_reference": 16
+      },
+      "r_squared": 0.9885675380239288,
+      "rmse_mah": 50.246724469362384,
+      "source": "M14 revised",
+      "wape": 0.022291202771126492
+    },
+    {
+      "frozen_172_mae_mah": null,
+      "high_headwind_mae_mah": 43.52524022552882,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 38.48993928799871,
+        "ci95_low": 18.648414573137558,
+        "estimate": 27.61479133305536
+      },
+      "mae_mah": 27.61479133305536,
+      "max_underprediction_mah": 165.18006441301395,
+      "mean_signed_error_mah": -0.0659343823317992,
+      "mean_underprediction_mah": 13.84036285769358,
+      "median_absolute_error_mah": 17.132405645791778,
+      "name": "f2_learned_neural_20260926",
+      "p95_absolute_error_mah": 87.45814306984187,
+      "p95_underprediction_mah": 47.92612322161544,
+      "paired_vs_reference": {
+        "ci95_high": 10.531201808563175,
+        "ci95_low": -8.769785321131724,
+        "estimate": 0.8717163204445896,
+        "flights_closer_than_reference": 22
+      },
+      "r_squared": 0.9920042776054853,
+      "rmse_mah": 42.021033217555086,
+      "source": "M14 revised",
+      "wape": 0.017384961978283136
+    },
+    {
+      "frozen_172_mae_mah": null,
+      "high_headwind_mae_mah": 41.530752386713594,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 28.74248299295601,
+        "ci95_low": 12.343800385530777,
+        "estimate": 19.06283565323017
+      },
+      "mae_mah": 19.06283565323017,
+      "max_underprediction_mah": 169.2328748015102,
+      "mean_signed_error_mah": -6.989007988130675,
+      "mean_underprediction_mah": 13.025921820680423,
+      "median_absolute_error_mah": 13.167773275727768,
+      "name": "f3_learned_neural_seed_mean",
+      "p95_absolute_error_mah": 45.273105428275805,
+      "p95_underprediction_mah": 37.53145857029458,
+      "paired_vs_reference": {
+        "ci95_high": 0.30133959400400756,
+        "ci95_low": -15.693812508761024,
+        "estimate": -7.680239359380601,
+        "flights_closer_than_reference": 23
+      },
+      "r_squared": 0.9950394127794803,
+      "rmse_mah": 33.09820321284356,
+      "source": "M14 revised",
+      "wape": 0.012001056572640745
+    },
+    {
+      "frozen_172_mae_mah": null,
+      "high_headwind_mae_mah": 48.3681129628981,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 38.66807238746045,
+        "ci95_low": 19.226003337624263,
+        "estimate": 27.842237633359865
+      },
+      "mae_mah": 27.842237633359865,
+      "max_underprediction_mah": 180.2155342654055,
+      "mean_signed_error_mah": -0.7771246178283315,
+      "mean_underprediction_mah": 14.309681125594098,
+      "median_absolute_error_mah": 21.702638810287453,
+      "name": "f2_learned_neural_seed_mean",
+      "p95_absolute_error_mah": 75.15168306242194,
+      "p95_underprediction_mah": 48.5934405335619,
+      "paired_vs_reference": {
+        "ci95_high": 10.275552270176746,
+        "ci95_low": -8.225536762432938,
+        "estimate": 1.0991626207490923,
+        "flights_closer_than_reference": 22
+      },
+      "r_squared": 0.9920184332214297,
+      "rmse_mah": 41.98381974984637,
+      "source": "M14 revised",
+      "wape": 0.017528151373966232
+    }
+  ],
+  "test_flights": 39,
+  "training_flights": 211,
+  "unchanged_baselines": [
+    "nominal_time_x_current",
+    "px4_style_multicopter_time_x_current"
+  ]
+}

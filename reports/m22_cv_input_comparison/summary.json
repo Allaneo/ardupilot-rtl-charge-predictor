@@ -1,0 +1,334 @@
+{
+  "milestone": "M22_cv_input_comparison",
+  "protocol": "DECISIONS.md D033",
+  "flights": 349,
+  "strong_headwind_flights": 84,
+  "network_architecture": [
+    256
+  ],
+  "xgboost_parameters": {
+    "colsample_bytree": 0.8,
+    "learning_rate": 0.1,
+    "max_depth": 3,
+    "min_child_weight": 5,
+    "n_estimators": 300,
+    "reg_lambda": 1.0,
+    "subsample": 1.0
+  },
+  "results": [
+    {
+      "inputs": "F0",
+      "model": "Ridge",
+      "mae_mah": 92.14157099499835,
+      "ci95_low": 83.73775241760777,
+      "ci95_high": 101.36560980568484,
+      "mae_percent": 5.781147474918927,
+      "strong_headwind_mae_mah": 147.30360206800611,
+      "max_underprediction_mah": 637.6384004916663
+    },
+    {
+      "inputs": "F0",
+      "model": "XGBoost",
+      "mae_mah": 66.04868116684337,
+      "ci95_low": 59.11274440912533,
+      "ci95_high": 73.60134003519141,
+      "mae_percent": 3.8563600090797325,
+      "strong_headwind_mae_mah": 112.43065921373604,
+      "max_underprediction_mah": 583.3357696533203
+    },
+    {
+      "inputs": "F0",
+      "model": "network 256",
+      "mae_mah": 33.33770412510855,
+      "ci95_low": 28.746905563873344,
+      "ci95_high": 38.256391531884404,
+      "mae_percent": 1.8849093556548235,
+      "strong_headwind_mae_mah": 71.32848744993255,
+      "max_underprediction_mah": 308.7250660474533
+    },
+    {
+      "inputs": "F1",
+      "model": "Ridge",
+      "mae_mah": 74.67353085755938,
+      "ci95_low": 67.09759435532,
+      "ci95_high": 82.90084919359056,
+      "mae_percent": 4.763798152315632,
+      "strong_headwind_mae_mah": 125.23406181782747,
+      "max_underprediction_mah": 493.1783203489531
+    },
+    {
+      "inputs": "F1",
+      "model": "XGBoost",
+      "mae_mah": 66.06172264930372,
+      "ci95_low": 60.0786031661144,
+      "ci95_high": 72.41422858831464,
+      "mae_percent": 3.926403369483728,
+      "strong_headwind_mae_mah": 99.87136947860029,
+      "max_underprediction_mah": 359.2018188476559
+    },
+    {
+      "inputs": "F1",
+      "model": "network 256",
+      "mae_mah": 33.0539204517119,
+      "ci95_low": 29.378679820997426,
+      "ci95_high": 36.997522632467955,
+      "mae_percent": 1.916265357967728,
+      "strong_headwind_mae_mah": 63.604580164078165,
+      "max_underprediction_mah": 269.14829008033075
+    },
+    {
+      "inputs": "F2",
+      "model": "Ridge",
+      "mae_mah": 33.66610326161604,
+      "ci95_low": 30.21557040798821,
+      "ci95_high": 37.3121109630419,
+      "mae_percent": 2.0074583294593307,
+      "strong_headwind_mae_mah": 58.725562292404014,
+      "max_underprediction_mah": 198.24839016526857
+    },
+    {
+      "inputs": "F2",
+      "model": "XGBoost",
+      "mae_mah": 51.604049730891454,
+      "ci95_low": 46.622599065910215,
+      "ci95_high": 57.27614099980383,
+      "mae_percent": 3.0142791645032148,
+      "strong_headwind_mae_mah": 75.50600286076171,
+      "max_underprediction_mah": 515.3543243408203
+    },
+    {
+      "inputs": "F2",
+      "model": "network 256",
+      "mae_mah": 23.739814677600275,
+      "ci95_low": 21.061441897688137,
+      "ci95_high": 26.690737527445915,
+      "mae_percent": 1.3911302741455969,
+      "strong_headwind_mae_mah": 41.46686701739634,
+      "max_underprediction_mah": 174.0944771020495
+    },
+    {
+      "inputs": "F3",
+      "model": "Ridge",
+      "mae_mah": 25.067537012967257,
+      "ci95_low": 22.284830500012788,
+      "ci95_high": 28.04777942675254,
+      "mae_percent": 1.4378940916805423,
+      "strong_headwind_mae_mah": 48.69870626322297,
+      "max_underprediction_mah": 172.55949519094065
+    },
+    {
+      "inputs": "F3",
+      "model": "XGBoost",
+      "mae_mah": 28.423945634044212,
+      "ci95_low": 25.25064277873041,
+      "ci95_high": 31.77441379089217,
+      "mae_percent": 1.6413497517001026,
+      "strong_headwind_mae_mah": 45.444240480593336,
+      "max_underprediction_mah": 174.09934082031305
+    },
+    {
+      "inputs": "F3",
+      "model": "network 256",
+      "mae_mah": 20.937447182951367,
+      "ci95_low": 18.59811269611563,
+      "ci95_high": 23.45447243696951,
+      "mae_percent": 1.2088357018385463,
+      "strong_headwind_mae_mah": 37.37145439867523,
+      "max_underprediction_mah": 129.691531490967
+    }
+  ],
+  "comparisons": [
+    {
+      "within": "Ridge",
+      "first": "F3",
+      "second": "F0",
+      "estimate": -67.07403398203108,
+      "ci95_low": -75.41303788463259,
+      "ci95_high": -59.184664547557475
+    },
+    {
+      "within": "Ridge",
+      "first": "F3",
+      "second": "F1",
+      "estimate": -49.60599384459212,
+      "ci95_low": -57.13731261097758,
+      "ci95_high": -42.20914208478934
+    },
+    {
+      "within": "Ridge",
+      "first": "F3",
+      "second": "F2",
+      "estimate": -8.598566248648774,
+      "ci95_low": -11.418910891758795,
+      "ci95_high": -5.821734206969648
+    },
+    {
+      "within": "Ridge",
+      "first": "F2",
+      "second": "F0",
+      "estimate": -58.4754677333823,
+      "ci95_low": -66.75011477529492,
+      "ci95_high": -50.498798114341625
+    },
+    {
+      "within": "XGBoost",
+      "first": "F3",
+      "second": "F0",
+      "estimate": -37.62473553279915,
+      "ci95_low": -44.897159724322805,
+      "ci95_high": -30.956051732536434
+    },
+    {
+      "within": "XGBoost",
+      "first": "F3",
+      "second": "F1",
+      "estimate": -37.637777015259495,
+      "ci95_low": -43.434217905653746,
+      "ci95_high": -31.978149239935476
+    },
+    {
+      "within": "XGBoost",
+      "first": "F3",
+      "second": "F2",
+      "estimate": -23.180104096847238,
+      "ci95_low": -28.168512816055276,
+      "ci95_high": -18.397560524516713
+    },
+    {
+      "within": "XGBoost",
+      "first": "F2",
+      "second": "F0",
+      "estimate": -14.444631435951914,
+      "ci95_low": -21.3131194046849,
+      "ci95_high": -7.77556325153357
+    },
+    {
+      "within": "network 256",
+      "first": "F3",
+      "second": "F0",
+      "estimate": -12.400256942157183,
+      "ci95_low": -16.53225140827126,
+      "ci95_high": -8.548172207772733
+    },
+    {
+      "within": "network 256",
+      "first": "F3",
+      "second": "F1",
+      "estimate": -12.116473268760545,
+      "ci95_low": -15.384977241066494,
+      "ci95_high": -9.113869204052541
+    },
+    {
+      "within": "network 256",
+      "first": "F3",
+      "second": "F2",
+      "estimate": -2.8023674946489097,
+      "ci95_low": -4.793382419547813,
+      "ci95_high": -0.8191197253614301
+    },
+    {
+      "within": "network 256",
+      "first": "F2",
+      "second": "F0",
+      "estimate": -9.597889447508273,
+      "ci95_low": -13.98805826395375,
+      "ci95_high": -5.529051506861366
+    },
+    {
+      "within": "F0",
+      "first": "network 256",
+      "second": "Ridge",
+      "estimate": -58.8038668698898,
+      "ci95_low": -66.32072809301417,
+      "ci95_high": -51.55790577660242
+    },
+    {
+      "within": "F0",
+      "first": "network 256",
+      "second": "XGBoost",
+      "estimate": -32.71097704173482,
+      "ci95_low": -38.47486546820384,
+      "ci95_high": -26.943302147527167
+    },
+    {
+      "within": "F0",
+      "first": "Ridge",
+      "second": "XGBoost",
+      "estimate": 26.092889828154977,
+      "ci95_low": 17.662457955189442,
+      "ci95_high": 34.25269310341379
+    },
+    {
+      "within": "F1",
+      "first": "network 256",
+      "second": "Ridge",
+      "estimate": -41.619610405847475,
+      "ci95_low": -48.40137545373509,
+      "ci95_high": -35.08184990900892
+    },
+    {
+      "within": "F1",
+      "first": "network 256",
+      "second": "XGBoost",
+      "estimate": -33.0078021975918,
+      "ci95_low": -38.62037676060807,
+      "ci95_high": -27.390405659417493
+    },
+    {
+      "within": "F1",
+      "first": "Ridge",
+      "second": "XGBoost",
+      "estimate": 8.611808208255674,
+      "ci95_low": 0.5697155606963955,
+      "ci95_high": 16.93018698626874
+    },
+    {
+      "within": "F2",
+      "first": "network 256",
+      "second": "Ridge",
+      "estimate": -9.926288584015758,
+      "ci95_low": -13.264500318038895,
+      "ci95_high": -6.604015192370356
+    },
+    {
+      "within": "F2",
+      "first": "network 256",
+      "second": "XGBoost",
+      "estimate": -27.86423505329118,
+      "ci95_low": -33.26734037618303,
+      "ci95_high": -22.868035816253606
+    },
+    {
+      "within": "F2",
+      "first": "Ridge",
+      "second": "XGBoost",
+      "estimate": -17.93794646927542,
+      "ci95_low": -23.210483809767943,
+      "ci95_high": -12.810268681496758
+    },
+    {
+      "within": "F3",
+      "first": "network 256",
+      "second": "Ridge",
+      "estimate": -4.130089830015892,
+      "ci95_low": -6.248944314264403,
+      "ci95_high": -2.1019025133912383
+    },
+    {
+      "within": "F3",
+      "first": "network 256",
+      "second": "XGBoost",
+      "estimate": -7.486498451092847,
+      "ci95_low": -10.698876477865953,
+      "ci95_high": -4.3736980965447225
+    },
+    {
+      "within": "F3",
+      "first": "Ridge",
+      "second": "XGBoost",
+      "estimate": -3.356408621076956,
+      "ci95_low": -6.3282229991032874,
+      "ci95_high": -0.49720651302755464
+    }
+  ]
+}

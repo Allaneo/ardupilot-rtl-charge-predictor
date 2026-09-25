@@ -1,0 +1,39 @@
+.DS_Store
+.venv*/
+.cache/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+build/
+*.egg-info/
+
+# Local simulator checkout and build products
+external/
+
+# Generated data and artifacts
+data/raw/*
+data/intermediate/*
+data/processed/*.parquet
+data/processed/*.csv
+models/*
+reports/figures/*
+
+# Preserve directory structure
+!data/raw/.gitkeep
+!data/intermediate/.gitkeep
+!data/processed/.gitkeep
+!data/processed/pipeline_dataset.csv
+!data/processed/confirmation_dataset.csv
+!data/processed/headwind_training_dataset.csv
+!models/.gitkeep
+!reports/figures/.gitkeep
+!reports/figures/payload_validation.png
+!reports/figures/wind_validation.png
+
+# Runtime files
+*.BIN
+*.bin
+*.log
+*.tlog
+*.tmp

@@ -1,0 +1,12 @@
+python:
+  implementation: CPython
+  version: 3.11.16
+  executable: /usr/local/bin/python3.11
+  provisioned_by: Homebrew
+compiler:
+  cxx: /usr/bin/clang++
+  version: Apple clang 17.0.0
+ardupilot:
+  board: sitl
+  target: copter
+  binary: external/ardupilot/build/sitl/bin/arducopter

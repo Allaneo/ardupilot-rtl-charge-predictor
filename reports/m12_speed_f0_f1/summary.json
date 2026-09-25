@@ -1,0 +1,172 @@
+{
+  "training_flights": 172,
+  "validation_flights": 39,
+  "high_headwind_validation_flights": 14,
+  "input_sets": {
+    "f0_route_and_wind": {
+      "speed_inputs": [
+        "headwind_m_s",
+        "crosswind_abs_m_s",
+        "required_airspeed_m_s",
+        "voltage_mean_v"
+      ],
+      "speed_validation_mae_m_s": 0.25151052069171914,
+      "speed_high_headwind_mae_m_s": 0.6103811111193362,
+      "charge_validation": {
+        "base": {
+          "ridge": {
+            "mae_mah": 77.46881884034408,
+            "rmse_mah": 155.7034719386479,
+            "max_underprediction_mah": 791.0020341128898,
+            "high_headwind_mae_mah": 155.4569758423947
+          },
+          "neural_64_32": {
+            "mae_mah": 67.96717451365285,
+            "rmse_mah": 146.4749549451628,
+            "max_underprediction_mah": 721.8783308209267,
+            "high_headwind_mae_mah": 141.36667696809295
+          }
+        },
+        "plus_constant_speed_time": {
+          "ridge": {
+            "mae_mah": 76.93138163611782,
+            "rmse_mah": 155.15562010735792,
+            "max_underprediction_mah": 789.4175804522029,
+            "high_headwind_mae_mah": 154.11183974827333
+          },
+          "neural_64_32": {
+            "mae_mah": 65.46757193986173,
+            "rmse_mah": 137.76982904370035,
+            "max_underprediction_mah": 676.1016679627924,
+            "high_headwind_mae_mah": 143.81406390148558
+          }
+        },
+        "plus_speed": {
+          "ridge": {
+            "mae_mah": 81.0279207051073,
+            "rmse_mah": 145.79640844032974,
+            "max_underprediction_mah": 688.5814613777989,
+            "high_headwind_mae_mah": 169.9986828585928
+          },
+          "neural_64_32": {
+            "mae_mah": 72.13608574626205,
+            "rmse_mah": 133.24716709050458,
+            "max_underprediction_mah": 576.4305460677888,
+            "high_headwind_mae_mah": 156.52457129542586
+          }
+        },
+        "plus_predicted_speed_time": {
+          "ridge": {
+            "mae_mah": 55.50138872641425,
+            "rmse_mah": 106.57198031070492,
+            "max_underprediction_mah": 582.6079061363566,
+            "high_headwind_mae_mah": 92.01553650219275
+          },
+          "neural_64_32": {
+            "mae_mah": 51.87502846481106,
+            "rmse_mah": 110.28096186371435,
+            "max_underprediction_mah": 587.6854037832936,
+            "high_headwind_mae_mah": 110.78063136170417
+          }
+        },
+        "plus_speed_and_time": {
+          "ridge": {
+            "mae_mah": 59.37058752356164,
+            "rmse_mah": 110.64164627194977,
+            "max_underprediction_mah": 587.8448116512427,
+            "high_headwind_mae_mah": 102.91708696599207
+          },
+          "neural_64_32": {
+            "mae_mah": 52.138775991268055,
+            "rmse_mah": 105.30931531389483,
+            "max_underprediction_mah": 528.3454752789125,
+            "high_headwind_mae_mah": 106.37291348257749
+          }
+        }
+      }
+    },
+    "f1_vehicle_symptoms": {
+      "speed_inputs": [
+        "headwind_m_s",
+        "crosswind_abs_m_s",
+        "required_airspeed_m_s",
+        "current_mean_a",
+        "throttle_mean"
+      ],
+      "speed_validation_mae_m_s": 0.250739045400557,
+      "speed_high_headwind_mae_m_s": 0.6078953406570068,
+      "charge_validation": {
+        "base": {
+          "ridge": {
+            "mae_mah": 71.18677333161632,
+            "rmse_mah": 141.66598766418537,
+            "max_underprediction_mah": 706.7387577960126,
+            "high_headwind_mae_mah": 153.19195571379151
+          },
+          "neural_64_32": {
+            "mae_mah": 65.23505116035649,
+            "rmse_mah": 112.45004490899608,
+            "max_underprediction_mah": 428.03467462545586,
+            "high_headwind_mae_mah": 119.17553774932118
+          }
+        },
+        "plus_constant_speed_time": {
+          "ridge": {
+            "mae_mah": 70.69628903467151,
+            "rmse_mah": 140.52855151049158,
+            "max_underprediction_mah": 701.2327035057679,
+            "high_headwind_mae_mah": 151.86242206331158
+          },
+          "neural_64_32": {
+            "mae_mah": 68.05923204687748,
+            "rmse_mah": 124.90865074413401,
+            "max_underprediction_mah": 481.4966066775128,
+            "high_headwind_mae_mah": 129.64826648310654
+          }
+        },
+        "plus_speed": {
+          "ridge": {
+            "mae_mah": 78.52660674583113,
+            "rmse_mah": 142.08856551402548,
+            "max_underprediction_mah": 687.4762261162282,
+            "high_headwind_mae_mah": 164.75180624231058
+          },
+          "neural_64_32": {
+            "mae_mah": 77.34278323276779,
+            "rmse_mah": 129.4071399971001,
+            "max_underprediction_mah": 421.09975368684763,
+            "high_headwind_mae_mah": 132.88555158668802
+          }
+        },
+        "plus_predicted_speed_time": {
+          "ridge": {
+            "mae_mah": 55.15369137679794,
+            "rmse_mah": 108.1389041229626,
+            "max_underprediction_mah": 586.6607877457254,
+            "high_headwind_mae_mah": 97.11973469439643
+          },
+          "neural_64_32": {
+            "mae_mah": 66.32627642152549,
+            "rmse_mah": 117.31911964004642,
+            "max_underprediction_mah": 495.8167042157038,
+            "high_headwind_mae_mah": 119.54785328060292
+          }
+        },
+        "plus_speed_and_time": {
+          "ridge": {
+            "mae_mah": 54.222953273475014,
+            "rmse_mah": 107.32108823311347,
+            "max_underprediction_mah": 584.7111056877875,
+            "high_headwind_mae_mah": 94.87084326822352
+          },
+          "neural_64_32": {
+            "mae_mah": 53.04690600466727,
+            "rmse_mah": 100.91533291408886,
+            "max_underprediction_mah": 457.22154570108887,
+            "high_headwind_mae_mah": 107.2328001015799
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "all_checks_passed": true,
+  "bearing_quadrant_counts": {
+    "0": 62,
+    "1": 63,
+    "2": 63,
+    "3": 62
+  },
+  "checks": {
+    "all_bearing_quadrants_covered": true,
+    "expected_row_count": true,
+    "family_splits_match_hash_assignment": true,
+    "fingerprints_match_rows": true,
+    "generation_is_reproducible": true,
+    "maximum_absolute_correlation_below_0_25": true,
+    "parameter_hash_current": true,
+    "patch_hash_current": true,
+    "split_fractions_within_0_03": true,
+    "unique_fingerprints": true,
+    "unique_run_ids": true,
+    "unique_scenario_ids": true
+  },
+  "maximum_absolute_pairwise_correlation": 0.18028743990715,
+  "row_count": 250,
+  "split_counts": {
+    "test": 39,
+    "train": 172,
+    "validation": 39
+  },
+  "split_fraction_error": {
+    "test": 0.006000000000000005,
+    "train": 0.01200000000000001,
+    "validation": 0.006000000000000005
+  },
+  "status_counts": {
+    "completed": 250
+  }
+}

@@ -1,0 +1,7 @@
+condition,model,n_validation_flights,mae_mah
+headwind_below_2,f3_with_cubic_ridge,25,23.527494557871993
+headwind_below_2,f3_without_cubic_ridge,25,24.701587465142474
+headwind_below_2,ridge_f2_frozen,25,29.683793815327807
+headwind_at_least_2,f3_with_cubic_ridge,14,62.59601953989806
+headwind_at_least_2,f3_without_cubic_ridge,14,81.54848481275667
+headwind_at_least_2,ridge_f2_frozen,14,63.63451205773545

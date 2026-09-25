@@ -1,0 +1,10 @@
+name,reference,estimate,ci95_low,ci95_high,interpretation
+frozen_m7_f2_ridge,frozen_m7_f2_ridge,0.0,0.0,0.0,negative favors candidate; descriptive post-hoc comparison
+f3_learned_ridge,frozen_m7_f2_ridge,-5.653859021946996,-11.981892657308055,0.2476901721189836,negative favors candidate; descriptive post-hoc comparison
+f3_learned_neural_20260924,frozen_m7_f2_ridge,-4.707865549175573,-14.752508400471228,4.9782375737471,negative favors candidate; descriptive post-hoc comparison
+f3_learned_neural_20260925,frozen_m7_f2_ridge,-13.311138778270971,-21.25275796152884,-5.956016131723813,negative favors candidate; descriptive post-hoc comparison
+f3_learned_neural_20260926,frozen_m7_f2_ridge,-9.60736654033849,-17.82547297231202,-1.7908925668085982,negative favors candidate; descriptive post-hoc comparison
+f2_learned_ridge,frozen_m7_f2_ridge,1.506879113223596,-5.91964482999875,8.617274237843674,negative favors candidate; descriptive post-hoc comparison
+f2_learned_neural_20260924,frozen_m7_f2_ridge,-5.469982179964459,-15.22476034528725,3.7980823958596797,negative favors candidate; descriptive post-hoc comparison
+f2_learned_neural_20260925,frozen_m7_f2_ridge,4.382303259337061,-6.668287367511339,15.160943510617075,negative favors candidate; descriptive post-hoc comparison
+f2_learned_neural_20260926,frozen_m7_f2_ridge,-3.410915724595002,-14.07218083796667,6.780422072342068,negative favors candidate; descriptive post-hoc comparison

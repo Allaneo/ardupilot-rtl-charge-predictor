@@ -1,0 +1,73 @@
+{
+  "ardupilot_commit": "d12a8f8997634cee977581cbaa5548c04facc1f5",
+  "checks": {
+    "all_runs_automatic_disarm": true,
+    "hover_current_increases_with_payload": true,
+    "hover_throttle_increases_with_payload": true,
+    "rtl_charge_increases_with_payload": true,
+    "zero_charge_matches_unmodified": true,
+    "zero_current_matches_unmodified": true,
+    "zero_throttle_matches_unmodified": true
+  },
+  "control": {
+    "automatic_disarm_observed": true,
+    "current_sample_count": 100,
+    "hover_current_mean_a": 28.894453392028808,
+    "hover_current_std_a": 0.25942835064527026,
+    "hover_throttle_mean": 0.37223996460437775,
+    "motor_pwm_mean": 1605.965,
+    "payload_mass_kg": null,
+    "rtl_charge_mah": 413,
+    "rtl_duration_s": 53.41375494003296,
+    "rtl_start_boot_s": 79.657291,
+    "run_name": "m2-unmodified-control",
+    "window_duration_s": 10.0
+  },
+  "passed": true,
+  "patch_path": "patches/ardupilot_centered_payload.patch",
+  "patch_sha256": "6c58c27282539d3519962692d87bdfaba41ce01b094a18e3956a3473bb14fe20",
+  "patched_runs": [
+    {
+      "automatic_disarm_observed": true,
+      "current_sample_count": 100,
+      "hover_current_mean_a": 28.895368919372558,
+      "hover_current_std_a": 0.2595281015334522,
+      "hover_throttle_mean": 0.3722633522748947,
+      "motor_pwm_mean": 1605.995,
+      "payload_mass_kg": 0.0,
+      "rtl_charge_mah": 412,
+      "rtl_duration_s": 53.4049072265625,
+      "rtl_start_boot_s": 79.65979,
+      "run_name": "m2-patched-zero",
+      "window_duration_s": 10.0
+    },
+    {
+      "automatic_disarm_observed": true,
+      "current_sample_count": 100,
+      "hover_current_mean_a": 33.84789039611817,
+      "hover_current_std_a": 0.30805253535573957,
+      "hover_throttle_mean": 0.43408506631851196,
+      "motor_pwm_mean": 1657.07,
+      "payload_mass_kg": 0.5,
+      "rtl_charge_mah": 482,
+      "rtl_duration_s": 53.71498703956604,
+      "rtl_start_boot_s": 79.854712,
+      "run_name": "m2-payload-0.5kg",
+      "window_duration_s": 10.0
+    },
+    {
+      "automatic_disarm_observed": true,
+      "current_sample_count": 100,
+      "hover_current_mean_a": 38.84670738220215,
+      "hover_current_std_a": 0.35938627807123086,
+      "hover_throttle_mean": 0.4970314535498619,
+      "motor_pwm_mean": 1705.6175,
+      "payload_mass_kg": 1.0,
+      "rtl_charge_mah": 553,
+      "rtl_duration_s": 53.71111297607422,
+      "rtl_start_boot_s": 79.85971,
+      "run_name": "m2-payload-1.0kg",
+      "window_duration_s": 10.0
+    }
+  ]
+}

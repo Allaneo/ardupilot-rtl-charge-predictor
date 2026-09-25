@@ -1,0 +1,43 @@
+experiment:
+  name: ardupilot_rtl_charge_v1
+  seed: 20260921
+  observation_window_s: 10.0
+  primary_target: rtl_charge_mah
+  completion_event: automatic_disarm_after_rtl
+
+simulation:
+  vehicle: ArduCopter
+  frame: quad
+  base_frame_mass_kg: 3.0
+  speedup: 2
+  ardupilot_commit: d12a8f8997634cee977581cbaa5548c04facc1f5
+  base_parameter_file: config/base_parameters.parm
+  payload_parameter: SIM_PAYLOAD_MASS
+  ekf_drag_coefficients:
+    x_kg_per_m2: 17.209
+    y_kg_per_m2: 17.209
+    momentum_per_s: 0.209
+
+scenario:
+  # Provisional ranges. Freeze only after engineering flights pass.
+  distance_m: [200.0, 1500.0]
+  bearing_deg: [0.0, 360.0]
+  decision_altitude_m: [30.0, 120.0]
+  wind_speed_m_s: [0.0, 6.0]
+  wind_direction_deg: [0.0, 360.0]
+  payload_mass_kg: [0.0, 1.0]
+  turbulence_m_s: [0.0, 0.0]
+
+dataset:
+  engineering_flights: 48
+  pipeline_flights: 250
+  main_flights: 3000
+  split_fraction:
+    train: 0.70
+    validation: 0.15
+    test: 0.15
+
+validation:
+  charge_crosscheck_absolute_mah: 2.0
+  charge_crosscheck_relative_fraction: 0.01
+  preserve_failed_runs: true

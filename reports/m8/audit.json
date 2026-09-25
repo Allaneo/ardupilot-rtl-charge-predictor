@@ -1,0 +1,40 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "all_dataset_quality_checks_passed": true,
+    "all_six_breakdown_dimensions_present": true,
+    "dataset_rows_match_manifest": true,
+    "example_sample_train_only": true,
+    "feature_sizes_match": true,
+    "frozen_manifest_250_completed": true,
+    "m6_selected_candidate_count": true,
+    "m6_validation_only": true,
+    "m7_actual_labels_match_dataset": true,
+    "m7_metrics_recompute": true,
+    "m7_models_frozen": true,
+    "m7_paired_mae_differences_recompute": true,
+    "m7_residual_columns_consistent": true,
+    "m7_same_39_flights_for_every_model": true,
+    "scenario_families_do_not_cross_splits": true,
+    "split_sizes_match": true
+  },
+  "scope": "250-flight final Course 2 simulation dataset; earlier 3000-flight proposal superseded by D019",
+  "sha256": {
+    "config/base_parameters.parm": "2f5ce03671f92bfca42dabff69a505058fb52e27086fafbd86a866f5b4af27cf",
+    "config/experiment.yaml": "4eee123c9b88bab2c5b62d3d64b5fb75b822a680346675720342a32f3733befc",
+    "config/feature_sets.yaml": "c1ee49db0147fafa591ce1f93c2b506a065a06eb1a48312d79a55469dfaee539",
+    "data/manifests/pipeline_scenarios.csv": "54310d787c4c235ee38a9bb2a87a7dbf3635980c0d5bcb71bd158000317f09d7",
+    "data/processed/pipeline_dataset.csv": "6b3a713e542b80810b44a4598f86bde06442834e2e7c9b9bee13021aabd949f2",
+    "patches/ardupilot_centered_payload.patch": "6c58c27282539d3519962692d87bdfaba41ce01b094a18e3956a3473bb14fe20",
+    "reports/m6/summary.json": "8a7d17d6676cbeb970c0d215a9ef801e69f6fe1af3db6ce0159b39322d63cfbe",
+    "reports/m7/summary.json": "22808692fb7dd17c1898d386b28c469a7ea98ce5c657841f9c6fa0f90ff5bdf1",
+    "reports/m7/test_predictions.csv": "bb6ddbd243c6e377d8e56f84db666623c73fab16884988f312ee127ab378ed50"
+  },
+  "versions": {
+    "numpy": "2.0.2",
+    "pandas": "2.2.3",
+    "python": "3.11.16",
+    "scikit_learn": "1.6.1",
+    "xgboost": "2.1.4"
+  }
+}

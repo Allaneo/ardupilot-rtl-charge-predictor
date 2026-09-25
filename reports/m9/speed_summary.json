@@ -1,0 +1,40 @@
+{
+  "all_validation": {
+    "constant_10_m_s": {
+      "mae_m_s": 0.8369950526082701,
+      "mean_error_m_s": 0.8329089379216555,
+      "n": 39
+    },
+    "learned_speed": {
+      "mae_m_s": 0.250739045400557,
+      "mean_error_m_s": 0.15121758206403177,
+      "n": 39
+    },
+    "old_wind_added_formula": {
+      "mae_m_s": 1.3596558174776838,
+      "mean_error_m_s": 0.012594356513086739,
+      "n": 39
+    }
+  },
+  "crossfit_train_speed_mae_m_s": 0.18184017981180445,
+  "headwind_at_least_2_m_s": {
+    "constant_10_m_s": {
+      "mae_m_s": 2.256039657070629,
+      "mean_error_m_s": 2.256039657070629,
+      "n": 14
+    },
+    "learned_speed": {
+      "mae_m_s": 0.6078953406570068,
+      "mean_error_m_s": 0.3950833309569208,
+      "n": 14
+    },
+    "old_wind_added_formula": {
+      "mae_m_s": 1.349895005783211,
+      "mean_error_m_s": -1.349895005783211,
+      "n": 14
+    }
+  },
+  "training_flights": 172,
+  "validation_flights": 39,
+  "validation_lean_near_30deg_count": 15
+}

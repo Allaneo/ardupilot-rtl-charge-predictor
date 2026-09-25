@@ -1,0 +1,8 @@
+repository: https://github.com/ArduPilot/ardupilot.git
+commit: d12a8f8997634cee977581cbaa5548c04facc1f5
+branch_at_clone: master
+clone_date: 2026-09-21
+submodules: recursive
+unmodified_sitl_binary:
+  path: external/baselines/arducopter-unmodified-d12a8f8997634cee977581cbaa5548c04facc1f5
+  sha256: 9d61230c027ad962e7ef772a4750bae505266557b3d0ae1fd374e30f27edd2cf

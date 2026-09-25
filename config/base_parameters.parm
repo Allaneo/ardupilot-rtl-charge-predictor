@@ -1,0 +1,12 @@
+# EKF3 is the deployed estimator. Drag coefficients are the values printed by
+# the pinned default quad frame model at SITL startup.
+AHRS_EKF_TYPE 3
+EK2_ENABLE 0
+EK3_ENABLE 1
+EK3_DRAG_BCOEF_X 17.209
+EK3_DRAG_BCOEF_Y 17.209
+EK3_DRAG_MCOEF 0.209
+
+# Use the commanded horizontal wind at all tested altitudes; turbulence is
+# varied separately by scenario.
+SIM_WIND_T 1

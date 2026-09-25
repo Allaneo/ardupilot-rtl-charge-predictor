@@ -1,0 +1,190 @@
+{
+  "accepted_count": 19,
+  "all_checks_passed": true,
+  "checks": {
+    "all_crosscheck_errors_below_2mah": true,
+    "all_runs_have_four_active_motors": true,
+    "all_windows_have_at_least_50_battery_samples": true,
+    "at_least_ten_completed_acceptance_flights": true,
+    "incomplete_run_rejection_exercised": true,
+    "no_completed_flight_parser_failures": true
+  },
+  "maximum_crosscheck_error_mah": 0.48112063743428735,
+  "parser_failures": [],
+  "rejected_incomplete_runs": [
+    "m3-wind-8ms-270deg-p0.5-001"
+  ],
+  "runs": [
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.3561733045712572,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 550.7989894666807,
+      "rtl_charge_mah": 550.4428161621095,
+      "run_id": "m3-wind-0ms-000deg-p0-001",
+      "runner_charge_mah": 551.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.35879067375594786,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 542.1275925536388,
+      "rtl_charge_mah": 541.7688018798829,
+      "run_id": "m3-wind-5ms-000deg-p0-001",
+      "runner_charge_mah": 542.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.48112063743428735,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 731.5720874343093,
+      "rtl_charge_mah": 731.090966796875,
+      "run_id": "m3-wind-5ms-000deg-p1-001",
+      "runner_charge_mah": 731.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.3573306699714749,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 560.3531436582526,
+      "rtl_charge_mah": 559.9958129882812,
+      "run_id": "m3-wind-5ms-090deg-p0-001",
+      "runner_charge_mah": 560.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.352207641187988,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 628.5825390620864,
+      "rtl_charge_mah": 628.2303314208984,
+      "run_id": "m3-wind-5ms-225deg-p0-001",
+      "runner_charge_mah": 628.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.41959818343229927,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 654.1408124778659,
+      "rtl_charge_mah": 653.7212142944336,
+      "run_id": "m3-wind-6ms-270deg-p0.5-001",
+      "runner_charge_mah": 653.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.38052108745944224,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 589.2856648252524,
+      "rtl_charge_mah": 588.905143737793,
+      "run_id": "m4-direct-launch-acceptance-001",
+      "runner_charge_mah": 589.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.4053137861867526,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 620.6340331160206,
+      "rtl_charge_mah": 620.2287193298339,
+      "run_id": "m4-route-090-p0.4-w3-045-002",
+      "runner_charge_mah": 620.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.3330118621354359,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 1072.3039759124285,
+      "rtl_charge_mah": 1071.970964050293,
+      "run_id": "pipeline-0001-run-001",
+      "runner_charge_mah": 1072.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.30396403253917015,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 1304.3807584661329,
+      "rtl_charge_mah": 1304.0767944335937,
+      "run_id": "pipeline-0002-run-001",
+      "runner_charge_mah": 1304.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.31536733190159794,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 1544.8664781717453,
+      "rtl_charge_mah": 1544.5511108398437,
+      "run_id": "pipeline-0003-run-001",
+      "runner_charge_mah": 1544.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.26006674280779407,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 2027.6518666695656,
+      "rtl_charge_mah": 2027.3917999267578,
+      "run_id": "pipeline-0004-run-001",
+      "runner_charge_mah": 2028.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.3037569284642814,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 1958.5008699655737,
+      "rtl_charge_mah": 1958.1971130371094,
+      "run_id": "pipeline-0005-run-001",
+      "runner_charge_mah": 1958.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.28786895117536915,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 1604.755047295902,
+      "rtl_charge_mah": 1604.4671783447266,
+      "run_id": "pipeline-0006-run-001",
+      "runner_charge_mah": 1606.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.3901318565735892,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 1097.8308850304015,
+      "rtl_charge_mah": 1097.440753173828,
+      "run_id": "pipeline-0007-run-001",
+      "runner_charge_mah": 1097.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.2999072475026878,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 1323.4201212841763,
+      "rtl_charge_mah": 1323.1202140366736,
+      "run_id": "pipeline-0008-run-001",
+      "runner_charge_mah": 1324.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.31097075640809635,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 2646.8895396484536,
+      "rtl_charge_mah": 2646.5785688920455,
+      "run_id": "pipeline-0009-run-001",
+      "runner_charge_mah": 2647.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.39731024457182684,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 1316.1220188017007,
+      "rtl_charge_mah": 1315.724708557129,
+      "run_id": "pipeline-0010-run-001",
+      "runner_charge_mah": 1317.0
+    },
+    {
+      "active_motor_count": 4,
+      "crosscheck_error_mah": 0.28669371928845067,
+      "decision_battery_samples": 100,
+      "integrated_charge_mah": 2363.6183343442885,
+      "rtl_charge_mah": 2363.331640625,
+      "run_id": "pipeline-0015-run-001",
+      "runner_charge_mah": 2364.0
+    }
+  ]
+}

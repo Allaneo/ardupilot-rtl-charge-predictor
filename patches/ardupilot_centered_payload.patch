@@ -1,0 +1,49 @@
+diff --git a/libraries/SITL/SIM_Aircraft.cpp b/libraries/SITL/SIM_Aircraft.cpp
+index 87da157a21..6c6366e6c3 100644
+--- a/libraries/SITL/SIM_Aircraft.cpp
++++ b/libraries/SITL/SIM_Aircraft.cpp
+@@ -1127,7 +1127,7 @@ void Aircraft::update_battery(const struct sitl_input &input)
+ 
+ void Aircraft::update_external_payload(const struct sitl_input &input)
+ {
+-    external_payload_mass = 0;
++    external_payload_mass = MAX(0.0f, sitl->payload_mass.get());
+ 
+ #if AP_SIM_SPRAYER_ENABLED
+     // update sprayer
+@@ -1468,4 +1468,3 @@ bool SITL::SIM::set_pose(uint8_t instance, const Location &loc, const Quaternion
+ {
+     return Aircraft::set_pose(instance, loc, quat, velocity_ef, gyro_rads);
+ }
+-
+diff --git a/libraries/SITL/SITL.cpp b/libraries/SITL/SITL.cpp
+index 75a1f79103..a70e04f8be 100644
+--- a/libraries/SITL/SITL.cpp
++++ b/libraries/SITL/SITL.cpp
+@@ -532,6 +532,14 @@ const AP_Param::GroupInfo SIM::var_info3[] = {
+     // @Values: 0:Disable, 1:Enable
+     AP_GROUPINFO("ODOM_ENABLE",   1, SIM,  odom_enable, 0),
+ 
++    // @Param: PAYLOAD_MASS
++    // @DisplayName: Fixed external payload mass
++    // @Description: Additional centred payload mass included in vehicle translational dynamics without changing the frame propulsion calibration
++    // @Units: kg
++    // @Range: 0 100
++    // @User: Advanced
++    AP_GROUPINFO("PAYLOAD_MASS",  2, SIM,  payload_mass, 0),
++
+     // @Param: LED_LAYOUT
+     // @DisplayName: LED layout
+     // @Description: LED layout config value
+diff --git a/libraries/SITL/SITL.h b/libraries/SITL/SITL.h
+index 808c5b1925..e99ac86863 100644
+--- a/libraries/SITL/SITL.h
++++ b/libraries/SITL/SITL.h
+@@ -247,6 +247,7 @@ public:
+     AP_Float batt_voltage; // battery voltage base
+     AP_Float batt_capacity_ah; // battery capacity in Ah
+     AP_Float batt_resistance; // battery internal resistance override in ohms
++    AP_Float payload_mass; // fixed external payload mass in kg
+     AP_Int8  rc_fail;     // fail RC input
+     AP_Int8  rc_chancount; // channel count
+     AP_Int8  float_exception; // enable floating point exception checks

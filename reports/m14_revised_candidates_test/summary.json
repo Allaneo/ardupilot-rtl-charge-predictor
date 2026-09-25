@@ -1,0 +1,329 @@
+{
+  "candidate_selection_on_test": false,
+  "f2_epochs": {
+    "20260924": 467,
+    "20260925": 441,
+    "20260926": 467
+  },
+  "f3_epochs": {
+    "20260924": 321,
+    "20260925": 409,
+    "20260926": 421
+  },
+  "milestone": "M14_posthoc_revised_candidate_test",
+  "paired_vs_frozen_m7_f2_ridge": [
+    {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "interpretation": "negative favors candidate; descriptive post-hoc comparison",
+      "name": "frozen_m7_f2_ridge",
+      "reference": "frozen_m7_f2_ridge"
+    },
+    {
+      "ci95_high": 0.2476901721189836,
+      "ci95_low": -11.981892657308055,
+      "estimate": -5.653859021946996,
+      "interpretation": "negative favors candidate; descriptive post-hoc comparison",
+      "name": "f3_learned_ridge",
+      "reference": "frozen_m7_f2_ridge"
+    },
+    {
+      "ci95_high": 4.9782375737471,
+      "ci95_low": -14.752508400471228,
+      "estimate": -4.707865549175573,
+      "interpretation": "negative favors candidate; descriptive post-hoc comparison",
+      "name": "f3_learned_neural_20260924",
+      "reference": "frozen_m7_f2_ridge"
+    },
+    {
+      "ci95_high": -5.956016131723813,
+      "ci95_low": -21.25275796152884,
+      "estimate": -13.311138778270971,
+      "interpretation": "negative favors candidate; descriptive post-hoc comparison",
+      "name": "f3_learned_neural_20260925",
+      "reference": "frozen_m7_f2_ridge"
+    },
+    {
+      "ci95_high": -1.7908925668085982,
+      "ci95_low": -17.82547297231202,
+      "estimate": -9.60736654033849,
+      "interpretation": "negative favors candidate; descriptive post-hoc comparison",
+      "name": "f3_learned_neural_20260926",
+      "reference": "frozen_m7_f2_ridge"
+    },
+    {
+      "ci95_high": 8.617274237843674,
+      "ci95_low": -5.91964482999875,
+      "estimate": 1.506879113223596,
+      "interpretation": "negative favors candidate; descriptive post-hoc comparison",
+      "name": "f2_learned_ridge",
+      "reference": "frozen_m7_f2_ridge"
+    },
+    {
+      "ci95_high": 3.7980823958596797,
+      "ci95_low": -15.22476034528725,
+      "estimate": -5.469982179964459,
+      "interpretation": "negative favors candidate; descriptive post-hoc comparison",
+      "name": "f2_learned_neural_20260924",
+      "reference": "frozen_m7_f2_ridge"
+    },
+    {
+      "ci95_high": 15.160943510617075,
+      "ci95_low": -6.668287367511339,
+      "estimate": 4.382303259337061,
+      "interpretation": "negative favors candidate; descriptive post-hoc comparison",
+      "name": "f2_learned_neural_20260925",
+      "reference": "frozen_m7_f2_ridge"
+    },
+    {
+      "ci95_high": 6.780422072342068,
+      "ci95_low": -14.07218083796667,
+      "estimate": -3.410915724595002,
+      "interpretation": "negative favors candidate; descriptive post-hoc comparison",
+      "name": "f2_learned_neural_20260926",
+      "reference": "frozen_m7_f2_ridge"
+    }
+  ],
+  "posthoc_caveat": "The 39 test flights were already used once for M7 historical models; this is informative revised-candidate evidence, not a fresh untouched-study claim.",
+  "results": [
+    {
+      "feature_set": "historical_f2",
+      "high_headwind_mae_mah": 53.23705993473308,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 42.06397586652502,
+        "ci95_low": 21.547634754220645,
+        "estimate": 31.02570705765036
+      },
+      "mae_mah": 31.02570705765036,
+      "max_underprediction_mah": 168.59570554620723,
+      "mean_signed_error_mah": -3.2181205360210035,
+      "mean_underprediction_mah": 17.12191379683568,
+      "median_absolute_error_mah": 18.25506296019489,
+      "model": "ridge",
+      "name": "frozen_m7_f2_ridge",
+      "p95_absolute_error_mah": 82.9741893221765,
+      "p95_underprediction_mah": 78.34746808918206,
+      "r_squared": 0.9905844486764229,
+      "rmse_mah": 45.59957033627977,
+      "wape": 0.019532312630621065
+    },
+    {
+      "feature_set": "f3_learned",
+      "high_headwind_mae_mah": 36.54995160091861,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 33.452349830210665,
+        "ci95_low": 18.60731056730879,
+        "estimate": 25.371848035703366
+      },
+      "mae_mah": 25.371848035703366,
+      "max_underprediction_mah": 127.09801801201411,
+      "mean_signed_error_mah": 0.8517584507232425,
+      "mean_underprediction_mah": 12.260044792490062,
+      "median_absolute_error_mah": 17.32283111468564,
+      "model": "ridge",
+      "name": "f3_learned_ridge",
+      "p95_absolute_error_mah": 59.96628548038674,
+      "p95_underprediction_mah": 49.821365788018795,
+      "r_squared": 0.9944987172345183,
+      "rmse_mah": 34.85538283045828,
+      "wape": 0.015972911332177635
+    },
+    {
+      "architecture": [
+        1024
+      ],
+      "feature_set": "f3_learned",
+      "fixed_epochs": 321,
+      "high_headwind_mae_mah": 52.29923484152208,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 37.113746430473554,
+        "ci95_low": 17.846699701948552,
+        "estimate": 26.317841508474793
+      },
+      "mae_mah": 26.317841508474793,
+      "max_underprediction_mah": 177.344769042777,
+      "mean_signed_error_mah": -8.551065281595989,
+      "mean_underprediction_mah": 17.434453395035387,
+      "median_absolute_error_mah": 19.6038385719487,
+      "model": "neural",
+      "name": "f3_learned_neural_20260924",
+      "p95_absolute_error_mah": 75.36006323873009,
+      "p95_underprediction_mah": 57.026597389578804,
+      "r_squared": 0.992496939755475,
+      "rmse_mah": 40.70587454670345,
+      "seed": 20260924,
+      "wape": 0.016568463924173833
+    },
+    {
+      "architecture": [
+        1024
+      ],
+      "feature_set": "f3_learned",
+      "fixed_epochs": 409,
+      "high_headwind_mae_mah": 33.2643347462077,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 27.019963646725504,
+        "ci95_low": 11.548243172203216,
+        "estimate": 17.71456827937939
+      },
+      "mae_mah": 17.71456827937939,
+      "max_underprediction_mah": 166.4886132297711,
+      "mean_signed_error_mah": -4.471049978641861,
+      "mean_underprediction_mah": 11.092809129010625,
+      "median_absolute_error_mah": 12.04285522462078,
+      "model": "neural",
+      "name": "f3_learned_neural_20260925",
+      "p95_absolute_error_mah": 34.62491340110409,
+      "p95_underprediction_mah": 32.25068834511501,
+      "r_squared": 0.9955252847195862,
+      "rmse_mah": 31.435514771209984,
+      "seed": 20260925,
+      "wape": 0.011152251425129166
+    },
+    {
+      "architecture": [
+        1024
+      ],
+      "feature_set": "f3_learned",
+      "fixed_epochs": 421,
+      "high_headwind_mae_mah": 43.43435749505097,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 30.652917077716676,
+        "ci95_low": 14.968949278119261,
+        "estimate": 21.418340517311872
+      },
+      "mae_mah": 21.418340517311872,
+      "max_underprediction_mah": 163.865242131983,
+      "mean_signed_error_mah": -7.944908704154206,
+      "mean_underprediction_mah": 14.681624610733039,
+      "median_absolute_error_mah": 15.922000340478462,
+      "model": "neural",
+      "name": "f3_learned_neural_20260926",
+      "p95_absolute_error_mah": 50.78461095661731,
+      "p95_underprediction_mah": 50.78461095661731,
+      "r_squared": 0.9948967329897748,
+      "rmse_mah": 33.57082537144436,
+      "seed": 20260926,
+      "wape": 0.013483970638795686
+    },
+    {
+      "feature_set": "f2_learned",
+      "high_headwind_mae_mah": 48.366214533646406,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 42.89541050901279,
+        "ci95_low": 23.50563743451177,
+        "estimate": 32.532586170873955
+      },
+      "mae_mah": 32.532586170873955,
+      "max_underprediction_mah": 145.4657401027689,
+      "mean_signed_error_mah": 3.32041507541725,
+      "mean_underprediction_mah": 14.606085547728354,
+      "median_absolute_error_mah": 25.26742115042657,
+      "model": "ridge",
+      "name": "f2_learned_ridge",
+      "p95_absolute_error_mah": 86.3155595800455,
+      "p95_underprediction_mah": 48.50119560692506,
+      "r_squared": 0.9909714940029075,
+      "rmse_mah": 44.65250404054291,
+      "wape": 0.02048097220125859
+    },
+    {
+      "architecture": [
+        256
+      ],
+      "feature_set": "f2_learned",
+      "fixed_epochs": 467,
+      "high_headwind_mae_mah": 43.1225598284375,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 36.130172203706316,
+        "ci95_low": 18.063260494693473,
+        "estimate": 25.5557248776859
+      },
+      "mae_mah": 25.5557248776859,
+      "max_underprediction_mah": 187.61312109478422,
+      "mean_signed_error_mah": -0.3879451380864327,
+      "mean_underprediction_mah": 12.971835007886167,
+      "median_absolute_error_mah": 19.445808743349517,
+      "model": "neural",
+      "name": "f2_learned_neural_20260924",
+      "p95_absolute_error_mah": 55.478107905613165,
+      "p95_underprediction_mah": 32.9131282411251,
+      "r_squared": 0.9930665885551618,
+      "rmse_mah": 39.130136197483715,
+      "seed": 20260924,
+      "wape": 0.016088671464781885
+    },
+    {
+      "architecture": [
+        256
+      ],
+      "feature_set": "f2_learned",
+      "fixed_epochs": 441,
+      "high_headwind_mae_mah": 59.89435493243885,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 47.565627236758814,
+        "ci95_low": 25.102029743497027,
+        "estimate": 35.40801031698742
+      },
+      "mae_mah": 35.40801031698742,
+      "max_underprediction_mah": 187.8534172884183,
+      "mean_signed_error_mah": -1.8774943330668823,
+      "mean_underprediction_mah": 18.642752325027153,
+      "median_absolute_error_mah": 32.05767864328891,
+      "model": "neural",
+      "name": "f2_learned_neural_20260925",
+      "p95_absolute_error_mah": 95.13471698467724,
+      "p95_underprediction_mah": 76.17532781690544,
+      "r_squared": 0.9885675380239288,
+      "rmse_mah": 50.24672446936243,
+      "seed": 20260925,
+      "wape": 0.02229120277112649
+    },
+    {
+      "architecture": [
+        256
+      ],
+      "feature_set": "f2_learned",
+      "fixed_epochs": 467,
+      "high_headwind_mae_mah": 43.52524022552882,
+      "high_headwind_n": 9,
+      "mae_bootstrap_95": {
+        "ci95_high": 38.347357613188805,
+        "ci95_low": 18.7653242944277,
+        "estimate": 27.61479133305536
+      },
+      "mae_mah": 27.61479133305536,
+      "max_underprediction_mah": 165.18006441301395,
+      "mean_signed_error_mah": -0.06593438233180211,
+      "mean_underprediction_mah": 13.84036285769358,
+      "median_absolute_error_mah": 17.132405645791778,
+      "model": "neural",
+      "name": "f2_learned_neural_20260926",
+      "p95_absolute_error_mah": 87.45814306984207,
+      "p95_underprediction_mah": 47.92612322161544,
+      "r_squared": 0.9920042776054853,
+      "rmse_mah": 42.0210332175551,
+      "seed": 20260926,
+      "wape": 0.017384961978283136
+    }
+  ],
+  "speed_model": "random forest fit on 211 train/validation speed labels; test speed labels excluded",
+  "test_flights": 39,
+  "test_labels_used": true,
+  "test_speed_labels_used": false,
+  "test_speed_predictions": {
+    "max_m_s": 9.998874451282243,
+    "min_m_s": 6.566123092216661
+  },
+  "train_speed_oof_mae_m_s": 0.16230805466706216,
+  "train_validation_flights": 211
+}
